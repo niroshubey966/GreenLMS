@@ -7,7 +7,7 @@ As a team, our target is to achieve the goal of creating a perfect LMS ```before
 * Learning materials.(word,powerpoint,pdf documents,audio,video resources...etc)
 * Forum.
 * Online exams.
-* event calander.
-* assignment handler.
-* student proformence analysis.
-* complaints & ideas submission ability.
+* Event calander.
+* Assignment handler.
+* Student performance analysis.
+* Complaints & ideas submission ability.

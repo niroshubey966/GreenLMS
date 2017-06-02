@@ -1,0 +1,76 @@
+h1.head{
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    font-family:sans-serif;
+    
+}
+p.head{
+    font-size: 15px;
+    color:white;
+    font-family: sans-serif;
+}
+img.head{
+    height: 100%;
+    width: 100%;
+}
+div.one{
+    height: 4%;
+    width: 100%;
+    font-size: 10px;
+    background-color: black;
+}
+div.two{
+    height: 8%;
+    width: 100%;
+    font-size: 10px;
+    background-color: #555555;
+}
+div.three{
+    height: 25%;
+    width: 100%;
+}
+div.four{
+     height: 25%;
+     width: 100%;
+    background-color: #F9F8F8;
+}
+button.b1 {
+  display: inline-block;
+  background-color: #555555;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  float: left;
+    
+}
+button.b1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button.b1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button.b1:hover span {
+  padding-right: 25px;
+}
+
+button.b1:hover span:after {
+  opacity: 1;
+  right: 0;
+}

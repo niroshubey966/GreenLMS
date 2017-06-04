@@ -2,16 +2,25 @@ body{
     font-family: Arial;
 }
 h1.head{
-    font-size: 40px;
+    font-size: 30px;
     background-color: black;
     color: white;
-    opacity: 0.5;
+    opacity: 0.7;
     font-family:sans-serif;
     
 }
+p.class{
+    position: absolute;
+    top:1%;
+    right:10%;
+}
+a.login{
+    color: white;
+    text-decoration: none;
+        }
 p.head{
     font-size: 15px;
-    color:white;
+    color:black;
   
 }
 img.head{
@@ -32,6 +41,8 @@ div.two{
     font-size: 10px;
     background-color: #555555;
     color:white;
+
+   
 }
 div.three{
     height: 40%;
@@ -74,12 +85,12 @@ button.b1 {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
+  font-size: 22px;
+  padding: 18px;
+  width: 180px;
   transition: all 0.5s;
   cursor: pointer;
-  float: left;
+  float: right;
     
 }
 button.b1 span {
@@ -105,4 +116,34 @@ button.b1:hover span {
 button.b1:hover span:after {
   opacity: 1;
   right: 0;
+}
+button.b2 {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    border: none;
+     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+     font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+button.b3 {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    border: none;
+     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+     font-size: 12px;
+    margin: 4px -15px;
+    cursor: pointer;
+    
 }

@@ -1,5 +1,6 @@
 body{
-    font-family: Arial;
+
+    font-family: sans-serif;
 }
 h1.head{
     font-size: 30px;
@@ -45,7 +46,7 @@ div.two{
    
 }
 div.three{
-    height: 40%;
+    height: 60%;
     width: 100%;
     color:white;
 }
@@ -86,7 +87,7 @@ button.b1 {
   color: #FFFFFF;
   text-align: center;
   font-size: 22px;
-  padding: 18px;
+  padding: 11px;
   width: 180px;
   transition: all 0.5s;
   cursor: pointer;
@@ -121,29 +122,15 @@ button.b2 {
     background-color: black;
     color: white;
     position: absolute;
-    top: 35%;
+    top: 43%;
     right: 35%;
     border: none;
      padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-     font-size: 12px;
+     font-size: 18px;
     margin: 4px 2px;
     cursor: pointer;
-    
-}
-button.b3 {
-    background-color: white;
-    color: black;
-    position: absolute;
-    top: 35%;
-    right: 25%;
-    border: none;
-     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-     font-size: 12px;
-    margin: 4px -15px;
-    cursor: pointer;
+    font-weight: bold;
     
 }

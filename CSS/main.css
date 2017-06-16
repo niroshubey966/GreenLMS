@@ -1,31 +1,35 @@
-
-/*button.b3{
-    background-image: url("menu.svg");
-    background-repeat: no-repeat;
-     width: 100%;
-  height: 100%;
-    float: left;
-    background-color: black;
-    
-}*/
-
-
 @media only screen and (max-width: 399px) {
-    /*assumed hight is 480px for apple iphones*/
+    /*assumed hight is 320px for apple iphones*/
 body{
 
     font-family: sans-serif;
 }
-h1.head{
-    font-size: 19px;
-    background-color: black;
-    color: white;
-    opacity: 0.7;
-    font-family:sans-serif;
+    .headtext {
   
-    
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
+
+.headtext button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.headtext button:hover {
+  background-color: #555;
+  color: white;
+}     
 p.class{
     position: absolute;
     top:1%;
@@ -35,13 +39,6 @@ a.login{
     color: white;
     text-decoration: none;
         }
-p.head{
-    font-size: 10px;
-    color:black;
-    
-  
-}
-
 div.one{
     height: 6%;
     font-size: 10px;
@@ -57,7 +54,7 @@ div.two{
 
     }
 div.three{
-    height: 50%;
+    height: 80%;
     color:white;
   background-color: #555555;
 
@@ -152,20 +149,38 @@ button.button {
 }
 
 }
-@media only screen and (min-width: 400px) and (max-width: 639px) {
+@media only screen and (max-width: 639px) and (min-width: 400px) {
     /*assumed hight is 320px for apple iphones*/
 body{
 
     font-family: sans-serif;
 }
-h1.head{
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    opacity: 0.7;
-    font-family:sans-serif;
-    
+    .headtext {
+  
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+
+.headtext button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.headtext button:hover {
+  background-color: #555;
+  color: white;
+}     
 p.class{
     position: absolute;
     top:1%;
@@ -175,12 +190,6 @@ a.login{
     color: white;
     text-decoration: none;
         }
-p.head{
-    font-size: 10px;
-    color:black;
-    
-  
-}
 
 div.one{
     height: 6%;
@@ -298,29 +307,33 @@ body{
 
     font-family: sans-serif;
 }
-h1.head{
-    font-size: 30px;
-    background-color: black;
-    color: white;
-    opacity: 0.7;
-    font-family:sans-serif;
-    
-}
-p.class{
-    position: absolute;
-    top:1%;
-    right:10%;
-}
-a.login{
-    color: white;
-    text-decoration: none;
-        }
-p.head{
-    font-size: 15px;
-    color:black;
-    
+  .headtext {
   
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+
+.headtext button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.headtext button:hover {
+  background-color: #555;
+  color: white;
+}     
+
 
 div.one{
     height: 6%;
@@ -438,14 +451,33 @@ button.button {
 
     font-family: sans-serif;
 }
-h1.head{
-    font-size: 30px;
-    background-color: black;
-    color: white;
-    opacity: 0.7;
-    font-family:sans-serif;
-    
+    .headtext {
+  
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+
+.headtext button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.headtext button:hover {
+  background-color: #555;
+  color: white;
+}  
+
 p.class{
     position: absolute;
     top:1%;
@@ -455,12 +487,7 @@ a.login{
     color: white;
     text-decoration: none;
         }
-p.head{
-    font-size: 15px;
-    color:black;
-    
-  
-}
+
 
 div.one{
     height: 4%;
@@ -591,14 +618,33 @@ body{
 
     font-family: sans-serif;
 }
-h1.head{
-    font-size: 30px;
-    background-color: black;
-    color: white;
-    opacity: 0.7;
-    font-family:sans-serif;
-    
+
+    .headtext {
+  
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+
+.headtext button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.headtext button:hover {
+  background-color: #555;
+  color: white;
+}   
 p.class{
     position: absolute;
     top:1%;
@@ -608,11 +654,7 @@ a.login{
     color: white;
     text-decoration: none;
         }
-p.head{
-    font-size: 15px;
-    color:black;
-  
-}
+
 
 div.one{
     height: 4%;
@@ -727,14 +769,34 @@ body{
 
     font-family: sans-serif;
 }
-h1.head{
-    font-size: 30px;
-    background-color: black;
-    color: white;
-    opacity: 0.7;
-    font-family:sans-serif;
-    
+ 
+ .headtext {
+  
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+
+.headtext button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.headtext button:hover {
+  background-color: #555;
+  color: white;
+}   
+
 p.class{
     position: absolute;
     top:1%;
@@ -744,11 +806,7 @@ a.login{
     color: white;
     text-decoration: none;
         }
-p.head{
-    font-size: 15px;
-    color:black;
-  
-}
+
 
 div.one{
     height: 4%;

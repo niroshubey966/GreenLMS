@@ -134,6 +134,9 @@ button.b1:hover span:after {
   opacity: 1;
   right: 0;
 }
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.button {
     background-color: black; 
     font-weight: bold;
@@ -286,6 +289,9 @@ button.b1:hover span:after {
   opacity: 1;
   right: 0;
 }
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.button {
     background-color: black; 
     font-weight: bold;
@@ -429,6 +435,9 @@ button.b1:hover span {
 button.b1:hover span:after {
   opacity: 1;
   right: 0;
+}
+.b1:focus{
+    background-color: #3e8e41;
 }
 button.button {
     background-color: black; 
@@ -597,6 +606,9 @@ button.b1:hover span:after {
   opacity: 1;
   right: 0;
 }
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.button {
     background-color: black; 
     font-weight: bold;
@@ -731,6 +743,7 @@ button.b1 span {
   position: relative;
   transition: 0.5s;
 }
+ 
 
 button.b1 span:after {
   content: '\00bb';
@@ -744,7 +757,9 @@ button.b1 span:after {
 button.b1:hover span {
   padding-right: 25px;
 }
-
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.b1:hover span:after {
   opacity: 1;
   right: 0;
@@ -769,7 +784,6 @@ body{
 
     font-family: sans-serif;
 }
- 
  .headtext {
   
   text-align: center;
@@ -895,6 +909,9 @@ button.b1 span:after {
 
 button.b1:hover span {
   padding-right: 25px;
+}
+ .b1:focus{
+    background-color: #3e8e41;
 }
 
 button.b1:hover span:after {

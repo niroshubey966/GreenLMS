@@ -134,6 +134,9 @@ button.b1:hover span:after {
   opacity: 1;
   right: 0;
 }
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.button {
     background-color: black; 
     font-weight: bold;
@@ -286,6 +289,9 @@ button.b1:hover span:after {
   opacity: 1;
   right: 0;
 }
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.button {
     background-color: black; 
     font-weight: bold;
@@ -429,6 +435,9 @@ button.b1:hover span {
 button.b1:hover span:after {
   opacity: 1;
   right: 0;
+}
+.b1:focus{
+    background-color: #3e8e41;
 }
 button.button {
     background-color: black; 
@@ -597,6 +606,9 @@ button.b1:hover span:after {
   opacity: 1;
   right: 0;
 }
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.button {
     background-color: black; 
     font-weight: bold;
@@ -731,6 +743,7 @@ button.b1 span {
   position: relative;
   transition: 0.5s;
 }
+ 
 
 button.b1 span:after {
   content: '\00bb';
@@ -744,7 +757,9 @@ button.b1 span:after {
 button.b1:hover span {
   padding-right: 25px;
 }
-
+.b1:focus{
+    background-color: #3e8e41;
+}
 button.b1:hover span:after {
   opacity: 1;
   right: 0;
@@ -769,7 +784,45 @@ body{
 
     font-family: sans-serif;
 }
- 
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
  .headtext {
   
   text-align: center;
@@ -895,6 +948,9 @@ button.b1 span:after {
 
 button.b1:hover span {
   padding-right: 25px;
+}
+ .b1:focus{
+    background-color: #3e8e41;
 }
 
 button.b1:hover span:after {

@@ -64,6 +64,7 @@ div.four{
     background-color: #F9F8F8;
        color:black;
 }
+
 div.five{
       height: 35%;
       background-color: white;
@@ -693,13 +694,43 @@ div.four{
     background-color: #F9F8F8;
        color:black;
 }
+div.about{
+        height: 100%;
+        width: 85%;  
+        float: left;
+        }
+div.calender{
+        height: 100%;
+        width: 15%;
+        float: left;
+    }
 div.five{
       height: 35%;
       background-color: white;
     color:black;
 }
+div.five_left{
+       height: 100%;
+        width: 25%;
+        float: left;  
+    }
+div.five_middle{
+       height: 100%;
+        width: 25%;
+        float: left;  
+    }
+div.five_right{
+       height: 100%;
+        width: 25%;
+        float: left;  
+    }
+div.comps_ideas{
+    height: 100%;
+    width: 25%;
+    float: left;           
+    }
 div.six{
-      height: 25%;
+      height: 0%;
       background-color: #f9f8f8;
     color:black;
   
@@ -847,17 +878,48 @@ div.four{
     background-color: #F9F8F8;
        color:black;
 }
+div.about{
+        height: 100%;
+        width: 85%;  
+        float: left;
+        }
+div.calender{
+        height: 100%;
+        width: 15%;
+        float: left;
+    }
 div.five{
       height: 35%;
       background-color: white;
     color:black;
 }
+div.five_left{
+       height: 100%;
+        width: 25%;
+        float: left;  
+    }
+div.five_middle{
+       height: 100%;
+        width: 25%;
+        float: left;  
+    }
+div.five_right{
+       height: 100%;
+        width: 25%;
+        float: left;  
+    }
+div.comps_ideas{
+    height: 100%;
+    width: 25%;
+    float: left;           
+    }
 div.six{
-      height: 25%;
+      height: 0%;
       background-color: #f9f8f8;
     color:black;
   
 }
+
 div.seven{
       height: 40%;
         background-color: #555555;

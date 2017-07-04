@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lms.css" type="text/css" rel="stylesheet" />
+    <style> 
+/*for first 3 divs*/   
+.logo{
+         height: 50px;
+        }
+        .btn{
+            height: 50px;
+        }
+        #login{
+            font-size: 12px;
+         
+        }
+        .slide{
+            height: 20%;
+            width:100%;
+        }
+        div.four{
+     color:black;
+        }
+div.about{
+        height: 100%;
+        width: 80%;  
+        float: left;
+        }
+div.calender{
+        height: 100%;
+        width: 20%;
+        float: left;
+  
+    } 
+/*engineering faculty*/
+body{
+    font-family: Arial;
+    background color : #555555;
+}
+.top{
+   width: 100%;
+   height: 20%;
+    float: left;
+}
+.bottom{
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+.resize{
+     max-width:100%;
+    height: auto;
+}
+.description{
+   text-align:center;
+    font-size: 12px;
+  
+}
+
+.click{
+   text-align: center;
+    
+}
+.access{
+   text-align: center;
+}
+    </style>
+    </head>
+<body>
+    <div class="lmscontainer lmsblack lmsright-align">
+<p id="login">Hi guest.<a href="">Login</a></p>
+    </div>
+    <div class="lmscontainer lmsdark-gray">
+        <img class="logo lmsmobile" src="GreenLMS2.png" alt="LMS logo" >
+         
+<div class="lmsdropdown-hover  lmsright lmsmobile">
+    <button class=" btn lmsbutton lmsdark-gray">Faculties</button>
+    <div class="lmsdropdown-content lmsbar-block lmsborder" style="right:0">
+      <a href="#" class="lmsbar-item lmsbutton">Computing</a>
+      <a href="#" class="lmsbar-item lmsbutton">Engineering</a>
+      <a href="#" class="lmsbar-item lmsbutton">Medicine</a>
+    </div>
+  </div>      
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">FAQ's</button>
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">Home</button>
+  
+    </div>
+    <div class=" slide w3-container">
+
+  <div class=" lmsdisplay-container lmstext-white">
+      <div class="w3-content w3-section" >
+    <img class="mySlides" src="home1.jpg"  style="width:100% ">
+    <img class="mySlides" src="home2.jpg" style="width:100%">
+    <img class="mySlides" src="home3.jpg" style="width:100%">
+   <div class="lmsdisplay-middle lmslarge lmscenter">
+        <div class="lmspanel lmsdark-gray lmsopacity-min">    
+            <h1>Learning Management System</h1>
+            <p>Online knowldge hub for your studies.</p>
+            <button class="lmsbutton lmsblack">Login</button>
+       </div>  
+      </div>
+     </div>
+      <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+  </div>
+
+</div>
+</body>
+</html>

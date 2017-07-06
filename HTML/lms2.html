@@ -36,54 +36,45 @@ div.calender{
   .calender * {box-sizing:border-box;}
 .calender ul {list-style-type: none;}
 . calender body {font-family: Verdana,sans-serif;}
-
 .month {
     padding: 70px 25px;
     width: 100%;
     background: #1abc9c;
 }
-
 .month ul {
     margin: 0;
     padding: 0;
 }
-
 .month ul li {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-
 .month .prev {
     float: left;
     padding-top: 10px;
 }
-
 .month .next {
     float: right;
     padding-top: 10px;
 }
-
 .weekdays {
     margin: 0;
     padding: 10px 0;
     background-color: #ddd;
 }
-
 .weekdays li {
     display: inline-block;
     width: 12%;
     color: #666;
     text-align: center;
 }
-
 .days {
     padding: 10px 0;
     background: #eee;
     margin: 0;
 }
-
 .days li {
     list-style-type: none;
     display: inline-block;
@@ -93,23 +84,19 @@ div.calender{
     font-size:12px;
     color: #777;
 }
-
 .days li .active {
     padding: 5px;
     background: #1abc9c;
     color: white !important
 }
-
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
     .weekdays li, .days li {width: 10.2%; font-size: 10px}
 }
-
 @media screen and (max-width: 600px) {
     .weekdays li, .days li {width: 12%;}
     .days li .active {padding: 2px;}
 }
-
 @media screen and (max-width: 290px) {
     .weekdays li, .days li {width: 12.2%;}
 }
@@ -146,7 +133,6 @@ div.six{
     color:black;
   
 }
-
 div.seven{
       height: 40%;
         background-color: #555555;
@@ -183,7 +169,6 @@ body{
     font-size: 12px;
   
 }
-
 .click{
    text-align: center;
     
@@ -230,7 +215,6 @@ body{
       <script>
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("mySlides");
@@ -250,7 +234,34 @@ function carousel() {
     
 
 <div class="four">
-         <div class="about lmsmobile">akka</div>
+         <div class="about lmsmobile"><h2 class="lmspanel lmsred">About LMS...</h2>
+             <hr/>
+            <p class="lmspadding">Why should We use a learning management system? Why not old fashioned paper training material and exams? And red pens to correct the answers? Well, if you're responsible for the training in your company or your organisation, you know what a hassle old fashioned paper brings along. </p>
+             <h2 class="lmspadding" style="text-shadow:1px 1px 0 #444">Benefits of an LMS</h2>
+             <p class="lmspadding"> Using a learning management system has some big benefits over the old fashioned way of learning.</p>
+             <ul>
+                <li class="lmspanel lmspale-red lmsleftbar lmsborder-red lmstext-red">
+                    Consistency of learning
+                </li>
+                 <p>Delivering your course through an LMS keeps the content centralized so all the students have a single source of content, instructions and questions. No excuses of old books or last years material. Everybody is up-to-date. 
+                 </p>
+                 <li class="lmspanel lmspale-red lmsleftbar lmsborder-red lmstext-red">
+    Easy tracking & reporting
+                </li>
+                 <p>With an LMS you can easily track the progress of your students. You can see at a glance who finished the course, who is half way and who didn't even start studying. 
+                 </p>
+                <li class="lmspanel lmspale-red lmsleftbar lmsborder-red lmstext-red">
+                    Create engaging courses
+                </li>
+                 <p>
+                     You can easily combine text, images and video in a learning management system. Which you cannot on paper. Trough the use of more engaging material your students will keep their focus and learn more.</p>
+<li class="lmspanel lmspale-red lmsleftbar lmsborder-red lmstext-red">
+                    Better results through engagement and gamification
+                </li>
+                 <p>
+                     Because the learning material is more engaging, users will learn more. And using gamification in an LMS keeps your users interested and challenged.
+                 </p>
+             </ul></div>
 <div class="calender lmsmobile">
 <div class="month">      
   <ul>
@@ -972,11 +983,9 @@ function carousel() {
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("calender");
@@ -1029,8 +1038,27 @@ function showDivs(n) {
          <div class="comps_ideas">akka</div>
     </div>
     <div class="six "></div>
-    <div class="seven">akka</div>
+    <div class="seven ">
+        <h6 class="lmsblue" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
+        <a href="https://www.facebook.com/" >
+        <img src="facebook.PNG" alt="Facebook" width="50px" height="50px">
+        </a>
+        <a href="https://www.youtube.com">
+     <img src="y.png" alt="youtube_icon" width="50px" height="50px">  
+        </a>
+    <a href="https://twitter.com/?lang=en">
+      <img src="twitter.PNG" alt="twitter_icon" width="50px" height="50px">
+        </a>
+        <a href="https://www.linkedin.com/uas/login">
+        <img src="linkedin.png" alt="LinkedIn" width="50px" height="50px">
+        </a>
+        <div class=lmsright-align>
+        <img class=""src=telephone-phone-icon-6.png alt="telephone_icon" width="70px" height="70px">
+            <b>0114598785/6/7</b>
+        <h6>No:7,Highlevel Road,Kirulapana.</h6></div>
+        <font size="1.5px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font>
+    </div>
     <div class="eight">akka</div>
 
 </body>
-</html>
+</html

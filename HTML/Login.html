@@ -16,9 +16,9 @@
             background-color: darkcyan;
             opacity: 0.8;
             margin-top: 150px;
-            margin-right:  400px;
+            /*margin-right:  400px;*/
             margin-bottom: 150px;
-            margin-left:400px;
+           /* margin-left:400px;*/
             padding-top:10px;
             padding-right: 50px;
             padding-bottom: 10px;
@@ -65,26 +65,83 @@
         .logform input[type="submit"]:active{
              background-color: red;
     color: grey;
-        }
-        
+::-webkit-input-placeholder {
+   text-align: left;
+}
     </style>
 </head>
-<body>
+<body onload="choosePic(); document.getElementById('id01').style.display='block';">
 <div class="logform">
-<form>
-    <img src="useraccount.png" alt="User_Account" width="150px" height="150px" align="left">
+<form class="lmscenter">
+    <img src="useraccount.png" alt="User_Account" width="150px" height="150px" >
     <font size=36 align=center color="white">Login</font>
     <h3>Welcome to the <br/>KNMT Green Univerity.</h3>
-    <input type="text" placeholder="Please enter your username..">
+    <input type="text" class="lmsmobile" placeholder="Please enter your username..">
 <br/><br/>
-<input type="password" placeholder="Please enter your password..">
+<input type="password" class="lmsmobile" placeholder="Please enter your password..">
     <br/><br/>
-<input type="submit" value="Login">
+<input type="submit" class="lmsmobile" value="Login">
     <br/><br/>
     <a class="" href="https://en.wikipedia.org/wiki/KNMT">forgot password..</a>
     
 </form>
+
+
+<div class="lmscontainer">
+
+
+  <div id="id01" class="lmsmodal">
+    <div class="lmsmodal-content lmscard-4 lmsanimate-zoom" style="max-width:600px">
+
+      <div class="lmscenter">Type the caracters you see in the picture below.<br>
+        <img src="" alt="Avatar" style="width:30%" id="myPicture" class="lmsmargin-top">
+
+        <script>
+var myPix = new Array("captcha1.png","captcha2.jpg","captcha3.png","captcha4.gif","captcha5.gif","captcha6.png","captcha7.jpg","captcha8.png","captcha9.png","captcha10.png","captcha11.jpg","captcha12.png","captcha13.png","captcha14.png","captcha15.png","captcha16.jpeg","captcha17.jpg","captcha18.jpg","captcha19.jpg","captcha20.jpg","captcha21.jpg","captcha22.jpg","captcha23.jpg","captcha24.jpg","captcha25.jpg");
+var randomNum;
+function choosePic() {
+	randomNum = Math.floor((Math.random() * myPix.length));
+    document.getElementById("myPicture").src = myPix[randomNum];
+    }
+function test(){
+    if(
+        document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha1.png"  && document.getElementById("text").value=="0034523" || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha2.jpg"  && document.getElementById("text").value=="polish" || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha3.png" && document.getElementById("text").value=="4359" || 
+        document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha4.gif" && document.getElementById("text").value=="W6 8HP"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha5.gif" && document.getElementById("text").value=="PQJRYD"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha6.png" && document.getElementById("text").value=="ABCDeF"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha7.jpg" && document.getElementById("text").value=="CAPTCHA"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha8.png" && document.getElementById("text").value=="3sAE hvo7sE"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha9.png" && document.getElementById("text").value=="profit"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha10.png" && document.getElementById("text").value=="finans"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha11.jpg" && document.getElementById("text").value=="caPtchA"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha12.png" && document.getElementById("text").value=="Viearer"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha13.png" && document.getElementById("text").value=="JeMH5LP4"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha14.png" && document.getElementById("text").value=="Viearer"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha15.png" && document.getElementById("text").value=="4359"   || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha16.jpeg" && document.getElementById("text").value=="following finding"  || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha17.jpg" && document.getElementById("text").value=="4076"   || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha18.jpg" && document.getElementById("text").value=="2078"   || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha19.jpg" && document.getElementById("text").value=="2502"   || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha20.jpg" && document.getElementById("text").value=="103"  || 
+        document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha21.jpg" && document.getElementById("text").value=="6325"   || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha22.jpg" && document.getElementById("text").value=="2438"   || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha23.jpg" && document.getElementById("text").value=="47"   ||  
+        document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha24.jpg" && document.getElementById("text").value=="1541"   || document.getElementById("myPicture").src=="file:///C:/Users/user/Desktop/GreenLMS-master/captcha25.jpg" && document.getElementById("text").value=="2599" )
+    {
+      alert("You are not a robot");
+      document.getElementById('id01').style.display='none';
+    }
+    else{
+      alert("Wrong");
     
+    }
+    }
+    </script>
+
+      </div>
+  
+      <form class="lmscontainer">
+        <div class="lmssection">
+          <label><b>Letters are case sensitive.</b></label>
+          <input class="lmsinput lmsborder lmsmargin-bottom" type="text" id="text" placeholder="Please provide your answer" name="usrname" required>
+
+
+        </div>
+      </form>
+
+      <div class="lmscontainer lmsborder-top lmspadding-16 lmslight-grey">
+        <button type="button" class="lmsbutton lmsred">Back to Home</button>
+          <button class="lmsbutton lmsred" onclick="test();">continue</button>
+        <button  type="button" class="lmsbutton lmsred lmsright" onclick="choosePic();">Refresh</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+            
+
 </div>
 </body>
 </html>

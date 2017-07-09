@@ -68,7 +68,6 @@
 ::-webkit-input-placeholder {
    text-align: left;
 }
-
     </style>
 </head>
 <body onload="choosePic(); document.getElementById('id01').style.display='block';">
@@ -96,24 +95,25 @@
 
       <div class="lmscenter">Type the caracters you see in the picture below.<br>
         <span onclick="document.getElementById('id01').style.display='none'" class="lmsbutton lmsxlarge lmshover-red lmsdisplay-topright" title="Close Modal">&times;</span>
-        <img src="" alt="Avatar" style="width:30%" id="myPicture" class="lmscircle lmsmargin-top">
+        <img src="" alt="Avatar" style="width:30%" id="myPicture" class="lmsmargin-top">
 
         <script>
-
-
-var myPix = new Array("captcha1.png","captcha2.jpg","captcha3.png");
+var myPix = new Array("captcha1.png","captcha2.jpg","captcha3.png","captcha4.gif","captcha5.gif","captcha6.png","captcha7.jpg","captcha8.png","captcha9.png","captcha10.png","captcha11.jpg","captcha12.png","captcha13.png","captcha14.png""captcha15.png""captcha16.jpeg""captcha17.jpg""captcha18.jpg""captcha19.jpg""captcha20.jpg""captcha21.jpg","captcha22.jpg","captcha23.jpg","captcha24.jpg","captcha25.jpg");
 var randomNum;
 function choosePic() {
 	randomNum = Math.floor((Math.random() * myPix.length));
-	document.getElementById("myPicture").src = myPix[randomNum];
-
+    document.getElementById("myPicture").src = myPix[randomNum];
     }
 function test(){
-    if(	document.getElementById("myPicture").src == myPix[randomNum]  && document.getElementById("text").value=="0034523" || document.getElementById("myPicture").src == myPix[randomNum]  && document.getElementById("text").value=="polish" || document.getElementById("myPicture").src == myPix[randomNum]  && document.getElementById("text").value=="4359" ){
+    if(	document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha1.png"  && document.getElementById("text").value=="0034523" || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha2.jpg"  && document.getElementById("text").value=="polish" || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha3.png" && document.getElementById("text").value=="4359" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha4.gif" && document.getElementById("text").value=="W6 8HP" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha5.gif" && document.getElementById("text").value=="PQJRYD" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha6.png" && document.getElementById("text").value=="ABCDeF" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha7.jpg" && document.getElementById("text").value=="CAPTCHA" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha8.png" && document.getElementById("text").value=="3sAE hvo7sE" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha9.png" && document.getElementById("text").value=="profit" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha10.png" && document.getElementById("text").value=="finans" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha11.jpg" && document.getElementById("text").value=="caPtchA" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha12.png" && document.getElementById("text").value=="Viearer" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha13.png" && document.getElementById("text").value=="JeMH5LP4" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha14.png" && document.getElementById("text").value=="Viearer" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha15.png" && document.getElementById("text").value=="4359" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha16.jpeg" && document.getElementById("text").value=="following finding" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha17.jpg" && document.getElementById("text").value=="4076" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha18.jpg" && document.getElementById("text").value=="2078" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha19.jpg" && document.getElementById("text").value=="2502" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha20.jpg" && document.getElementById("text").value=="103" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha21.jpg" && document.getElementById("text").value=="6325" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha22.jpg" && document.getElementById("text").value=="2438" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha23.jpg" && document.getElementById("text").value=="47" ) ||  document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha24.jpg" && document.getElementById("text").value=="1541" ) || document.getElementById("myPicture").src=="file:///C:/Users/Thisarani/Desktop/GreenLMS-master/HTML/captcha25.jpg" && document.getElementById("text").value=="2599" ){
       alert("You are not a robot");
-       
+      document.getElementById('id01').style.display='none';
     }
-}
+    else{
+      alert("wrong");
+    
+    }
+    }
     </script>
 
       </div>

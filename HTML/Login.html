@@ -1,10 +1,10 @@
 <DOCTYPE html>
 <html>
 <head>
-   <link href="lms.css" type="text/css" rel="stylesheet" />
+   <link href="login.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
         
-        body{
+          body{
             background-image: url(lmsbackground.jpg);
             background-size: cover;
             
@@ -65,36 +65,36 @@
         .logform input[type="submit"]:active{
              background-color: red;
     color: grey;
+}
 ::-webkit-input-placeholder {
    text-align: left;
-}
-    </style>
+} </style>
 </head>
 <body onload="choosePic(); document.getElementById('id01').style.display='block';">
 <div class="logform">
-<form class="lmscenter">
+<form class="logincenter">
     <img src="useraccount.png" alt="User_Account" width="150px" height="150px" >
     <font size=36 align=center color="white">Login</font>
     <h3>Welcome to the <br/>KNMT Green Univerity.</h3>
-    <input type="text" class="lmsmobile" placeholder="Please enter your username..">
+    <input type="text" class="loginmobile" placeholder="Please enter your username..">
 <br/><br/>
-<input type="password" class="lmsmobile" placeholder="Please enter your password..">
+<input type="password" class="loginmobile" placeholder="Please enter your password..">
     <br/><br/>
-<input type="submit" class="lmsmobile" value="Login">
+<input type="submit" class="loginmobile" value="Login">
     <br/><br/>
     <a class="" href="https://en.wikipedia.org/wiki/KNMT">forgot password..</a>
     
 </form>
 
 
-<div class="lmscontainer">
+<div class="logincontainer">
 
 
-  <div id="id01" class="lmsmodal">
-    <div class="lmsmodal-content lmscard-4 lmsanimate-zoom" style="max-width:600px">
+  <div id="id01" class="loginmodal">
+    <div class="loginmodal-content logincard-4 loginanimate-zoom" style="max-width:600px">
 
-      <div class="lmscenter">Type the caracters you see in the picture below.<br>
-        <img src="" alt="Avatar" style="width:30%" id="myPicture" class="lmsmargin-top">
+      <div class="logincenter">Type the caracters you see in the picture below.<br>
+        <img src="" alt="Avatar" style="width:30%" id="myPicture" class="loginmargin-top">
 
         <script>
 var myPix = new Array("captcha1.png","captcha2.jpg","captcha3.png","captcha4.gif","captcha5.gif","captcha6.png","captcha7.jpg","captcha8.png","captcha9.png","captcha10.png","captcha11.jpg","captcha12.png","captcha13.png","captcha14.png","captcha15.png","captcha16.jpeg","captcha17.jpg","captcha18.jpg","captcha19.jpg","captcha20.jpg","captcha21.jpg","captcha22.jpg","captcha23.jpg","captcha24.jpg","captcha25.jpg");
@@ -122,19 +122,19 @@ function test(){
 
       </div>
   
-      <form class="lmscontainer">
-        <div class="lmssection">
+      <form class="logincontainer">
+        <div class="loginsection">
           <label><b>Letters are case sensitive.</b></label>
-          <input class="lmsinput lmsborder lmsmargin-bottom" type="text" id="text" placeholder="Please provide your answer" name="usrname" required>
+          <input class="logininput loginborder loginmargin-bottom" type="text" id="text" placeholder="Please provide your answer" name="usrname" required>
 
 
         </div>
       </form>
 
-      <div class="lmscontainer lmsborder-top lmspadding-16 lmslight-grey">
-        <button type="button" class="lmsbutton lmsred">Back to Home</button>
-          <button class="lmsbutton lmsred" onclick="test();">continue</button>
-        <button  type="button" class="lmsbutton lmsred lmsright" onclick="choosePic();">Refresh</button>
+      <div class="logincontainer loginborder-top loginpadding-16 loginlight-grey">
+        <button type="button" class="loginbutton loginred">Back to Home</button>
+          <button class="loginbutton loginred" onclick="test();">continue</button>
+        <button  type="button" class="loginbutton loginred loginright" onclick="choosePic();">Refresh</button>
       </div>
 
     </div>

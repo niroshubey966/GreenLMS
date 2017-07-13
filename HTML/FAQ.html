@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lms.css" type="text/css" rel="stylesheet" />
+
+    <style>
+ .logo{
+         height: 50px;
+        }
+        .btn{
+            height: 50px;
+        }
+        #login{
+            font-size: 12px;
+         
+        }
+        .slide{
+            height: 20%;
+            width:100%;
+        }
+div.about{
+        width: 80%;  
+        float: left;
+        }
+        .lmspanel{
+             margin: 0%;
+        }
+div.calender{
+        height: 100%;
+        width: 20%;
+        float: left;
+    }
+        /*for calender*/
+  .calender * {box-sizing:border-box;}
+.calender ul {list-style-type: none;}
+. calender body {font-family: Verdana,sans-serif;}
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+.weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+}
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 10.2%; font-size: 10px}
+}
+@media screen and (max-width: 600px) {
+    .weekdays li, .days li {width: 12%;}
+    .days li .active {padding: 2px;}
+}
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+/*div five*/
+div.five{
+      height: 35%;
+      background-color: white;
+    color:black;
+    float: left;
+}
+div.five_left{
+       height: 100%;
+        width: 33.33%;
+        float: left;  
+    }
+div.five_middle{
+       height: 100%;
+        width:33.33%;
+        float: left;  
+    }
+div.five_right{
+       height: 100%;
+        width: 33.33%;
+        float: left;  
+    }
+div.six{
+      height: 100%;
+    width: 20%;
+      background-color: #f9f8f8;
+        color:black;
+  float: left;
+    margin: 0%;
+}
+div.seven{
+    height: 30%;
+    width: 100%;
+    background-color: #555555;
+    color:white;
+    float: left;
+}
+div.eight{
+      height: 8%;
+    width:100%;
+      background-color: black;
+    color:white;
+    float: left;
+     margin: 0%;
+}
+        /*engineering faculty*/
+body{
+    font-family: Arial;
+    background color : #555555;
+}
+.top{
+   width: 100%;
+   height: 20%;
+    float: left;
+}
+.click{
+   text-align: center;
+    
+}
+        .left{
+            width: 50%;
+            float: left;
+        }
+        
+        .right{
+            width: 50%;
+            float: left;
+        }
+        .logo2{
+            width: 25%;
+            float: left;
+        }
+        .copy_right{
+            width: 75%;
+            float: left;
+        }
+        .prev{
+            cursor: pointer;
+        }
+        .next{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="lmscontainer lmsblack lmsright-align">
+        <p id="login">Hi guest, <a href="login.html"> <b>Login</b></a></p>
+    </div>
+    <div class="lmscontainer lmsdark-gray">
+        <img class="logo lmsmobile" src="GreenLMS2.png" alt="LMS logo" >
+         
+<div class="lmsdropdown-hover  lmsright lmsmobile">
+    <button class=" btn lmsbutton lmsdark-gray">Faculties</button>
+    <div class="lmsdropdown-content lmsbar-block lmsborder" style="right:0">
+      <a href="#" class="lmsbar-item lmsbutton">Computing</a>
+      <a href="#" class="lmsbar-item lmsbutton">Engineering</a>
+      <a href="#" class="lmsbar-item lmsbutton">Medicine</a>
+    </div>
+  </div>      
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">FAQ's</button>
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">Home</button>
+  
+    </div>
+<div>
+    <h1 class="lmspadding lmsmargin-top lmspanel lmsgreen">Frequently asked questions.</h1>
+    <div class="lmscontainer">
+
+  <div class="lmsbar lmsblack">
+    <button class="lmsbar-item lmsbutton tablink lmsred" onclick="openCity(event,'University')">University</button>
+    <button class="lmsbar-item lmsbutton tablink" onclick="openCity(event,'LMS')">LMS</button>
+    <button class="lmsbar-item lmsbutton tablink" onclick="openCity(event,'Computin')">Computin</button>
+    <button class="lmsbar-item lmsbutton tablink" onclick="openCity(event,'Engineering')">Engineering</button>
+    <button class="lmsbar-item lmsbutton tablink" onclick="openCity(event,'Medicine')">Medicine</button>
+  </div>
+  
+  <div id="University" class="lmscontainer lmsborder city">
+      <p>Here you will find some frequently asked questions about applying to study at the University of Cambridge.</p>
+<div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Can I visit Cambridge before I apply?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>There are more than 100 different open days and events in Cambridge organised by the University and the Colleges throughout the year. These include the Cambridge Open Day, College open days, Department open days and specialist open days.<br><br>
+
+But don’t worry if you can’t manage to visit Cambridge. You don’t have to attend an open day in order to apply. </p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">What courses are available at Cambridge?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>At Cambridge we have full-time undergraduate courses ranging from Anglo-Saxon, Norse and Celtic to Veterinary Medicine, and lots in between.
+
+Many of our courses encompass several subjects, with some options available in a number of courses where the subjects overlap. This offers much greater flexibility than more narrowly focused courses elsewhere. Those with a clear sense of the subject they wish to pursue at university can specialise. However, students who are less certain are able to explore the wider subject area before deciding what to focus on. 
+ list of all the courses available can be found on the course index page</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">What is a College?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>As well as being members of the University, our students are also a member of College. A College is where you'll be based for the time you're studying at the University of Cambridge, and while the Colleges provide student accommodation they are much more than halls of residence. Colleges are responsible for admitting students, and they also organise ‘supervisions’ (small-group teaching sessions that support the lectures and practicals that you attend).
+
+For more information about the College system at Cambridge, and profiles on each of the 29 undergraduate Colleges, have a look at Colleges.</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+    
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">How do I choose a College?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>    
+It might seem a bit daunting trying to choose a College, but don't worry, Colleges are more alike than they are different! Students on the same course, regardless of their College, are taught together by the academic faculties/departments, and our cross-College moderation procedures mean that your choice of College does not affect your chances of being made an offer. The key functions that the University and Colleges are responsible for are outlined in Cambridge Explained.
+
+When choosing a College, we suggest you consider the following:
+
+course – most Colleges take students in all subjects, but there are a handful that don't so check availability (details can be found in the relevant course entries and College profiles)
+your age – four Colleges are exclusively for mature students (aged 21 or older), and their facilities are geared accordingly
+your gender – three Colleges consider applications from female students only.
+College size – number of students
+appearance and type of accommodation (eg on-site or College-owned houses)
+particular facilities
+personal instinct – many students can't explain why they were drawn to their College other than it just 'felt right' for them
+It can be helpful to make a shortlist of perhaps half a dozen Colleges based on their profiles and then either contact the Colleges for further information or arrange a visit. Each College has a profile (including links to their own websites).
+    
+    While your College organises your supervisions, contrary to what some people believe, the research specialisms of a College’s Fellows won’t dictate what you can study or guarantee you’ll be supervised by them. If a Fellow of your College is an expert in the aspects of the course you’ve chosen, you may be supervised by them. However, you’ll attend supervisions at another College is that’s where the relevant subject expert is based.
+
+Teaching is a level playing field across the University and is not determined by the College you attend – the differences between the Colleges lie in the ambience, not the educational opportunities.
+
+The key functions that the University and Colleges are responsible for are outlined in Cambridge Explained.
+    
+Guidance on how (and how not) to choose a College can be found in Choosing a College.</p>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Will choosing a preference College or an open application affect my chances of being made an offer?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p> 
+      
+For equally well-qualified students, making an open application or applying to a specific College makes no difference to your chances of being made an offer.
+
+Don’t agonise over choosing a College, students quickly settle in and really enjoy their College, wherever they end up! Each year, around 850 applicants are made an offer through the pool system by a different College to the one they originally applied/were allocated to – that’s about 25 per cent of all offers made.</p>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">    Can I choose more than one College?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>  
+No – you can only make one application to the University, either selecting a preference College or an open application. Applications to more than one College, or to one College and an open application are not allowed. In addition, once you’ve submitted your application, you cannot change this choice.</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align"> How do I apply?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>     
+The application process is really quite straightforward. To apply to the University of Cambridge you need to submit a UCAS application online by 15 October the year before you wish to start at the University.
+    
+    Applicants living in countries outside the EU are also asked to submit a Cambridge Online Preliminary Application Form (COPA).
+
+Once you have submitted your UCAS Application (and COPA, if required) you will also be asked to complete a Supplementary Application Questionnaire (SAQ).
+
+If you want to know what happens to your application once it is submitted, the ‘Applying’ section of our website has all the details. 
+      When is the application deadline?
+The deadline for your UCAS application is 15 October.
+
+Slightly earlier deadlines affect applicants for Organ Scholarships and some applicants wishing to be interviewed overseas.
+
+There is also a later deadline for some mature applicants applying to one of the mature Colleges – see the mature students section for more information.
+
+A useful summary of important dates and deadlines can be found in the Applying section.</p>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">  What should a personal statement include?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>      
+   
+Your personal statement is your opportunity to tell the universities you’re applying to about your subject interest(s) and why you’d be a good student of that subject. The process of writing your personal statement can also help you to better understand your academic interests and motivations.
+
+UCAS provide advice about what to include in your personal statement and you should refer to their website in the first instance. Your school/college may also be able to offer advice about what to include.
+
+At Cambridge, all admissions decisions are based solely on academic criteria – ability and potential. Therefore, in their personal statement, we’re looking for applicants to:
+
+explain their reasons for wanting to study the subject at university
+demonstrate enthusiasm for and commitment to their chosen course
+express any particular interests(s) within the field
+outline how they’ve pursued their interest in the subject in their own time
+Such information is often used as a basis for discussion at interview (if interviewed).
+
+If you wish to make any comments that are particularly relevant to your Cambridge application (eg to highlight particular features of the Cambridge course that attracted you), you have the opportunity to include an additional personal statement in your SAQ. This is optional and you won’t be disadvantaged if you have nothing to add in this section of the SAQ. As we’ll already have received a copy of it, you shouldn’t repeat information provided in your UCAS personal statement in the SAQ.</p>
+</div>
+
+      
+      
+      
+      
+      
+      
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Can I take a gap year and defer my entry?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>  
+
+About one in ten students coming to Cambridge takes a gap year before starting their studies. This year out is a very useful time in which to improve skills, earn money, travel and generally gain maturity and self-reliance.
+
+You should state on your UCAS application if you wish to defer entry. You’ll probably be asked about your plans at interview, so be prepared to talk about your year out.
+
+If you’re applying for Mathematics, most Colleges have a preference for immediate entry. However, if you’re applying for Engineering many Colleges generally prefer applicants to take a year out, to gain some industrial experience. Please note that it’s not possible to defer entry for the Graduate Course in Medicine.</p>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Will I be interviewed?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+Everyone with a realistic chance of being offered a place is invited to attend an interview – that's around 80 per cent of applicants. So, if you apply, it is very likely that you will be invited to Cambridge for an admissions interview (although due to the level of competition for places, there are applicants each year who are not interviewed).
+
+Interviews usually take place in Cambridge during the first three weeks of December, so we strongly advise you not to make unbreakable commitments for this period. Some applicants may be interviewed overseas for which an earlier application deadline and interview period may apply.
+
+Not all applicants who are interviewed will be successful (made an offer of a place), but all those who are made an offer will have been interviewed.
+      </p>
+</div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><div class="lmscontainer">
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Will I have to sit a written assessment?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+You will be required to sit a written assessment (with the exception of applicants to Mathematics and Music) either pre-interview or at-interview. If your course has a pre-interview assessment you will need to register by 15 October. If your course has an at-interview assessment your College will make the arrangements, usually for the same day as your interview(s).</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">What's the most important part of my application?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+
+Every application is assessed holistically – Admissions Tutors consider all of the information available together before making any decisions.
+
+No part of an application is considered in isolation; for example, a student’s performance at interview alone doesn’t determine the outcome of their application.</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align"> What work experience do I need to have?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+     
+Work experience isn't expected or required. However, for vocational courses, such as Medicine and Veterinary Medicine, having some relevant work experience in an appropriate setting is useful and recommended. It demonstrates commitment to your intended profession and gives you the opportunity to acquire greater understanding of the realities and pressures associated with that career.
+      What extra-curricular activities will help my chances of admission?
+Our admissions decisions are based on academic criteria (ability and potential) and so we expect to see evidence you your ‘super-curricular’ activities – your wider engagements with the area(s) of academic interest, such as reading and other explorations relevant to the course you’ve applied for.
+
+Your participation (or not) in specific extra-curricular activities that aren’t relevant to the course applied for are not taken into account and don’t affect your chances of being made an offer of a place at Cambridge.
+
+However, when composing your personal statement, you should consider the importance that your other university choices may place on extra-curricular activities.</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">     Can I transfer to Cambridge from another university?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+ 
+Cambridge Colleges will only, as a matter of principle, consider applications from students enrolled in a degree course at other UK universities in very exceptional circumstances.
+
+Any application to study at Cambridge would need strong support from your Course Director or other academic tutor at your current university. A reference or letter of recommendation from that person to the Cambridge College would be required, and only then can a Cambridge College consider an application. All such applications are still subject to the same academic assessment as any other application to the University.
+
+We do have a system of admitting graduates from other universities to do a second undergraduate degree as an affiliated student at Cambridge, in which case the course takes a year less than usual.</p>
+</div>
+
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+    
+    
+    
+    
+    
+    
+    
+    <button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align"> What qualifications are acceptable?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+    
+      The majority of applicants apply with A Levels, although other school/national examinations at an equivalent level (such as Scottish Highers and Advanced Highers, Irish Leaving Certificate, Welsh Baccalaureate, French Baccalaureate, German Abitur, Italian Maturita, and International Baccalaureate) are also acceptable. Information about typical requirements for a range of qualifications can be found in Entrance Requirements.</p>
+</div>
+
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">  What grades do I need?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+   
+Whatever school or college system you are being educated in, we require top grades in the highest level qualifications available for school/college students – most successful applicants to the University ultimately exceed the conditions of their offer.
+
+Please see the entrance requirements for typical requirements for the most common qualifications, or contact the College you are thinking of applying to.</p>
+</div>
+
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align"> Are there any subject requirements?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+     
+This depends upon the course you are planning to study. For many courses at Cambridge qualifications in certain subjects required and all Colleges expect such subjects to be passed, normally with an A or A* grade at A Level/grade 6 or 7 at Higher Level of the IB (or equivalent). Our other courses don’t have particular subject requirements but Admissions Tutors will expect high grades in the subjects most relevant to the course applied for and expect you to have read enough about the course to know what studying it entails.
+
+Subject requirements and preferences are given in the relevant course entry. Please also check College-specific requirements with the College(s) you’re considering applying to.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">  What's the University's position on exam resits?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+  
+    
+While it’s becoming less common to be able to resit exams, should the opportunity be available your application is unlikely to be adversely affected by your resitting one or two modules – we appreciate that even very capable students may have a ‘bad day’ when an exam doesn’t go quite to plan.
+
+However, there would be concern about your potential to be successful at Cambridge if you needed to resit numerous exams, particularly if only a marginal improvement could be achieved. This is because once at the University, students are regularly assessed by exam and there's no opportunity to resit any exams (with the exception of professional qualifying examinations in Medicine and Veterinary Medicine).
+
+You should state your intention to resit any exams in your SAQ. Where there are particular reasons for underperformance in qualifications it’s useful if these can be outlined in the school/college reference. In some cases, it may be appropriate for your school/college referee to complete an Extenuating Circumstances Form.</p>
+</div>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Mature applicants - Do I need to have undertaken some form of recent study?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+     
+Every mature applicant is considered on an individual basis allowing personal qualities and experience to be taken into account in the selection process. However, the nature and demands of Cambridge courses mean they do require academic preparation, and mature students must be of an equal academic standard to school leavers. Therefore, you’re expected to demonstrate evidence of recent academic achievement at a high level.
+
+If you are considering applying to Cambridge it's advisable to contact one of the mature Colleges to discuss your circumstances and for advice about academic requirements for the course you wish to take. </p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+    
+
+    
+    
+    
+    <button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Are there any bursaries or scholarships available?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+      
+Yes. Cambridge is fortunate to have a large amount of financial support available for its students. First of all there is the Cambridge Bursary Scheme for UK/EU students, offering bursaries of up to £3,500 a year (up to £5,600 per year for some mature students and care leavers). Colleges also offer financial support to students, and there are additional awards available for outstanding sportspeople, musicians and students with a disability.
+
+For more information please see Financial support.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script><button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">   Mature applicants - Is the application process the same for mature applicants?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+   
+Mature applicants need to submit a UCAS application online just like standard age applicants.
+
+If you're applying from a country outside the EU, you should also submit a Cambridge Online Preliminary Application (COPA). Those applying for the Graduate Course in Medicine need to complete an additional form as well.
+
+The standard application deadline is 15 October. However, the four mature Colleges consider mature and affiliate applications in some subjects as part of a second applications round.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align"> Mature applicants - Can I apply to any College?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+     
+Yes. You can apply to any of the 29 undergraduate Colleges. The majority of students are 18 or 19 years old when they start their course, so you may prefer to consider one of the four ‘mature’ Colleges (Hughes Hall, Lucy Cavendish College, St Edmund’s College and Wolfson College) where all students are over 21 years old. Mature students who make an open application are allocated to one of the mature Colleges.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">      Affiliated applicants - What is an affiliated applicant?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+
+If you are a graduate with an approved degree from another university, you can apply to take a Cambridge BA course as an affiliated applicant. This means you could take the degree in a year less than usual.
+
+Most Colleges consider affiliated applicants, but please note that there are some restrictions so please check with the College before submitting your application</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">Affiliated applicants - Is the application process the same for affiliated applicants?/button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+      
+Affiliated applicants need to submit a UCAS application just like any other applicant. If you're applying from a country outside the EU, you should also submit a Cambridge Online Preliminary Application (COPA).
+
+Affiliated applicants need to apply to a specific College. You can't make an open application as an affiliated applicant.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">      International applicants - Are my qualifications acceptable</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+
+If you wish to apply for an undergraduate place at Cambridge you need to be studying towards a qualification of an equivalent standard to A Levels and be hoping to achieve top marks in it. It's likely that you'll also be asked for a particular level of achievement in the subject area you're hoping to study at university.
+
+Entrance requirements for a range of international qualifications can be found in the international students’ pages. If you are in any doubt, to check the appropriateness of your qualifications you should contact the Cambridge Admissions Office in the first instance, enclosing brief details of the courses that you have taken/are taking, together with your achieved/expected grades and indicate clearly the subject that you are intending to study at the University.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align"> International applicants - Do I need an English language qualification?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+     
+It is essential that your English language skills are good enough for you to undertake an intensive and challenging academic course that is taught and examined in English.
+
+If your first language isn't English, you may also be asked to achieve a specific English language requirement as part of the conditions of your offer. 
+      </p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">   International applicants - What are the fees for international students?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+     
+The level of tuition fees for international students varies depending on the course you are studying. In addition to University tuition fees, all overseas fee status students normally have to pay College fees. Full details can be found at in the International students finance section.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">International applicants - Is there any additional financial help for international students?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+      
+The amount of financial support available for international students is very limited, but at Cambridge this includes Cambridge Commonwealth, European and International Trust awards; College awards; and a small number of country-specific scholarships. Few full scholarships are available at undergraduate level, and most support is a partial contribution to your overall costs and is means-tested. For more information see the International students section.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">International applicants - Is the application process the same for applicants form countries outside the EU?</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+      
+International applicants need to submit a UCAS application and a Cambridge Online Preliminary Application (COPA).
+
+Each year the University conducts interviews in certain overseas countries. If you would like to be considered for an interview in one of these countries an earlier application deadline may apply.
+
+See international applications for information and deadlines.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+<button onclick="myFunction('Demo1')" class="lmsbtn lmsblock lmsblack lmsleft-align">  International applicants - Does Cambridge run an English language course</button>
+<div id="Demo1" class="lmscontainer lmshide">
+  <p>
+    
+Yes. The University’s Language Centre runs Academic Development and Training for International Students.</p>
+</div>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("lmsshow") == -1) {
+        x.className += " lmsshow";
+    } else { 
+        x.className = x.className.replace(" lmsshow", "");
+    }
+}
+</script>
+      
+  <div id="Paris" class="lmscontainer lmsborder city" style="display:none">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Tokyo" class="lmscontainer lmsborder city" style="display:none">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" lmsred", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " lmsred";
+}
+</script>
+
+</div>
+
+    <div class="seven">
+        <div class=lms>
+        <h6 class="lmsblue lmspadding" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
+        <br/>
+        <div class="left lmsleft-align lmspadding">
+        <a href="https://www.facebook.com/" >
+        <img src="facebook.PNG" class="lmsmargin-left" alt="Facebook" width="45px" height="45px">
+        </a>
+        <a href="https://www.youtube.com">
+     <img src="y.png" class="lmsmargin-left" alt="youtube_icon" width="45px" height="45px"/>  
+        </a>
+    <a href="https://twitter.com/?lang=en">
+      <img src="twitter.PNG" class="lmsmargin-left" alt="twitter_icon" width="45px" height="45px"/>
+        </a>
+        <a href="https://plus.google.com/collections/featured" >
+        <img src="google+.PNG" class="lmsmargin-left" alt="Google+" width="45px" height="45px"/>
+        </a>
+        <a href="https://www.linkedin.com/uas/login">
+        <img src="linkedin.png" class="lmsmargin-left" alt="LinkedIn" width="45px" height="45px"/>
+        </a>
+        </div>
+        <div class="right lmsright-align lmspadding">
+        <img src="telephone-phone-icon-6.png" alt="telephone_icon" width="45px" height="45px"/>
+            <b>0114598785 / 6 / 7</b>
+        <h6>No:7,Highlevel Road,<br/>Kirulapana,Colombo,<br/>Sri Lanka.<br/></h6></div>
+        </div>
+    </div>
+    <div class="eight lmspanel lmspadding-24 lmsblack">
+        <div class="logo2">
+        <img src="logo.png" alt="KNMT GREEN UNI" width="100%" height="10%" >
+            </div>
+   <div class="copy_right lmsright-align">
+        
+        <font size="2px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font>
+        </div>
+        </div>
+               <script src="lms2.js"></script>
+        </body>
+</html>

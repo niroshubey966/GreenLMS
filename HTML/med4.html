@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lms.css" type="text/css" rel="stylesheet" />
+    <style>
+        .logo{
+         height: 50px;
+        }
+        .btn{
+            height: 50px;
+        }
+        #login{
+            font-size: 12px;
+         
+        }
+        .slide{
+            height: 20%;
+            width:100%;
+        }
+div.about{
+
+        width: 80%;  
+        float: left;
+        }
+div.calender{
+        height: 100%;
+        width: 20%;
+        float: left;
+    }
+
+        /*for calender*/
+  .calender * {box-sizing:border-box;}
+.calender ul {list-style-type: none;}
+. calender body {font-family: Verdana,sans-serif;}
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+.weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+}
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 10.2%; font-size: 10px}
+}
+@media screen and (max-width: 600px) {
+    .weekdays li, .days li {width: 12%;}
+    .days li .active {padding: 2px;}
+}
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+/*div five*/
+div.five{
+      height: 35%;
+    width: 100%;
+      background-color: white;
+    color:black;
+    float: left;
+}
+
+div.six{
+      height: 100%;
+    width: 20%;
+      background-color: #f9f8f8;
+        color:black;
+  float: left;
+}
+div.seven{
+    height: 30%;
+    width: 100%;
+    background-color: #555555;
+    color:white;
+    float: left;
+}
+div.eight{
+      height: 8%;
+    width:100%;
+      background-color: black;
+    color:white;
+    float: left;
+}
+        /*engineering faculty*/
+body{
+    font-family: Arial;
+    background color : #555555;
+}
+.top{
+   width: 100%;
+   height: 20%;
+    float: left;
+}
+.bottom{
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+.resize{
+     max-width:100%;
+    height: auto;
+}
+.description{
+   text-align:center;
+    font-size: 12px;
+  
+}
+.click{
+   text-align: center;
+    
+}
+.access{
+   text-align: center;
+}
+        .left{
+            width: 50%;
+            float: left;
+        }
+        
+        .right{
+            width: 50%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="lmscontainer lmsblack lmsright-align">
+<p id="login">Hi guest, <a href="login.html">Login</a></p>
+    </div>
+    <div class="lmscontainer lmsdark-gray">
+        <img class="logo lmsmobile" src="GreenLMS2.png" alt="LMS logo" >
+         
+<div class="lmsdropdown-hover  lmsright lmsmobile">
+    <button class=" btn lmsbutton lmsdark-gray">Faculties</button>
+    <div class="lmsdropdown-content lmsbar-block lmsborder" style="right:0">
+      <a href="#" class="lmsbar-item lmsbutton">Computing</a>
+      <a href="#" class="lmsbar-item lmsbutton">Engineering</a>
+      <a href="#" class="lmsbar-item lmsbutton">Medicine</a>
+    </div>
+  </div>      
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">FAQ's</button>
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">Home</button>
+  
+    </div>
+    <div class=" slide w3-container">
+
+  <div class=" lmsdisplay-container lmstext-white">
+      <div class="w3-content w3-section" >
+    <img class="mySlides" src="6.PNG"  style="width:100% ">
+    <img class="mySlides" src="9.PNG" style="width:100%">
+    <img class="mySlides" src="10.PNG" style="width:100%">
+   <div class="lmsdisplay-middle lmslarge lmscenter">
+        <div class="lmspanel lmsdark-gray lmsopacity-min">    
+            <h1>Learning Management System</h1>
+            <p>Online knowledge hub for your studies.</p>
+            <a href="login.html">
+            <button class="lmsbutton lmsblack">Login</button>
+            </a>
+       </div>  
+      </div>
+     </div>
+      <script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+  </div>
+
+</div>
+    
+
+
+    <div class="about lmsmobile lmswhite"><h2 class="lmspanel lmsgreen"><b>Faculty of Medical...</b></h2>
+        <center><h3><br><b>4 th Year</b></h3></center><br>
+        <table style="width:100%"><center>
+  <tr>
+    <th><img src="download%20(1).png"ss style="width:28%"></th>
+    <th><img src="images%20(1).png" style="width:28%"></th> 
+    
+  </tr>
+  <tr><h4>
+    <td><center><b>OB/GYN Rotation</b></center></td>
+      <td><center><b>Surgery Rotation</b></center></td> 
+    </h4>
+  </tr>
+      </center>
+        </table>            
+       
+              
+           
+    </div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      January<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+<span class="slide">
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>30</li>
+  <li>31</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+</ul>
+    </span>
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      February<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+<span class="slide">
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+</span>
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      March<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+<span class="slide">
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+</span>
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      April<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+<span class="slide">
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+</ul>
+</span>
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      May<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      June<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li></li>
+</ul>
+
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      July<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li>31</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li><span class="active">6</span></li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  
+</ul>
+
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      August<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      september<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+</ul>
+
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      octomber<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li>30</li>
+  <li>31</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+</ul>
+
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      November<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li></li>
+</ul>
+
+</div>
+<div class="calender lmsmobile">
+<div class="month">      
+  <ul>
+    <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
+    <li class="next" onclick="plusDivs(1)">&#10095;</li>
+    <li style="text-align:center">
+      December<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("calender");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    
+    
+  
+<div class="five lmspadding lmsblack" >
+    <h3>Degrees we offer for you thruogh our Medical Faculty</h3>
+    <li>Bsc.(Hons)Veterinary Bio Science</li>
+        <li>Bsc.Cancer Studies</li>
+        <li>Bsc.MicroBiology with Immunology</li>
+        <li>Msc.Veterinary Bio Science</li>
+        <li>Bsc.Pharmaciology</li>
+        
+        
+         
+   
+    </div>
+
+    <div class="seven">
+        <h6 class="lmsblue lmspadding" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
+        <br/>
+        <div class="left lmsleft-align lmspadding">
+        <a href="https://www.facebook.com/" >
+        <img src="facebook.PNG" alt="Facebook" width="45px" height="45px">
+        </a>
+        <a href="https://www.youtube.com">
+     <img src="y.png" alt="youtube_icon" width="45px" height="45px"/>  
+        </a>
+    <a href="https://twitter.com/?lang=en">
+      <img src="twitter.PNG" alt="twitter_icon" width="45px" height="45px"/>
+        </a>
+        <a href="https://plus.google.com/collections/featured" >
+        <img src="google+.PNG" alt="Google+" width="45px" height="45px"/>
+        </a>
+        <a href="https://www.linkedin.com/uas/login">
+        <img src="linkedin.png" alt="LinkedIn" width="45px" height="45px"/>
+        </a>
+        </div>
+        <div class="right lmsright-align lmspadding"><img src="logo.png" alt="KNMT GREEN UNI" width="30%" height="10%" >
+        <img src="telephone-phone-icon-6.png" alt="telephone_icon" width="45px" height="45px"/>
+            <b>0114598785 / 6 / 7</b>
+        <h6>No:7,Highlevel Road,<br/>Kirulapana,Colombo,<br/>Sri Lanka.<br/></h6></div>
+        </div>
+    
+    <div class="eight lmspanel lmspadding-24 lmsblack">
+ <br/>  <div class="lmsright-align">
+        <font size="2px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font>
+        </div>
+        </div>
+        </body>
+</html>

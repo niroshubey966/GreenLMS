@@ -4,7 +4,7 @@
    <link href="login.css" type="text/css" rel="stylesheet" />
     <style type="text/css">
         
-          body{
+                   body{
             background-image: url(lmsbackground.jpg);
             background-size: cover;
             
@@ -72,47 +72,47 @@
 </head>
 <body onload="choosePic(); document.getElementById('id01').style.display='block';">
 <div class="logform">
-<form class="logincenter">
+<form class="center" method="post" action="C:\xampp\htdocs\phpfiles\login.php">
     <img src="useraccount.png" alt="User_Account" width="150px" height="150px" >
-    <font size=36 align=center color="white">Login</font>
+    <font size=36 align=center color="white"></font>
     <h3>Welcome to the <br/>KNMT Green Univerity.</h3>
-    <input type="text" class="loginmobile" placeholder="Please enter your username..">
+    <input type="text" name="username" class="mobile" placeholder="Please enter your username..">
 <br/><br/>
-<input type="password" class="loginmobile" placeholder="Please enter your password..">
+<input type="password" name="password" class="mobile" placeholder="Please enter your password..">
     <br/><br/>
-<input type="submit" class="loginmobile" value="Login">
+<input type="submit" class="mobile" value="">
     <br/><br/>
     <a class="" href="https://en.wikipedia.org/wiki/KNMT">forgot password..</a>
     
 </form>
 
 
-<div class="logincontainer">
+<div class="container">
 
 
-  <div id="id01" class="loginmodal">
-    <div class="loginmodal-content logincard-4 loginanimate-zoom" style="max-width:600px">
+  <div id="id01" class="modal">
+    <div class="modal-content card-4 animate-zoom" style="max-width:600px">
 
-      <div class="logincenter">Type the caracters you see in the picture below.<br>
-        <img src="" alt="Avatar" style="width:30%" id="myPicture" class="loginmargin-top">
+      <div class="center">Type the caracters you see in the picture below.<br>
+        <img src="" alt="Avatar" style="width:30%" id="myPicture" class="margin-top">
 
         <script src="login.js"></script>
 
       </div>
   
-      <form class="logincontainer">
-        <div class="loginsection">
+      <form class="container">
+        <div class="section">
           <label><b>Letters are case sensitive.</b></label>
-          <input class="logininput loginborder loginmargin-bottom" type="text" id="text" placeholder="Please provide your answer" name="usrname" required>
+          <input class="input border margin-bottom" type="text" id="text" placeholder="Please provide your answer" name="usrname" required>
 
 
         </div>
       </form>
 
-      <div class="logincontainer loginborder-top loginpadding-16 loginlight-grey">
-        <button type="button" class="loginbutton loginred">Back to Home</button>
-          <button class="loginbutton loginred" onclick="test();">continue</button>
-        <button  type="button" class="loginbutton loginred loginright" onclick="choosePic();">Refresh</button>
+      <div class="container border-top padding-16 light-grey">
+        <button type="button" class="button red">Back to Home</button>
+          <button class="button red" onclick="test();">continue</button>
+        <button  type="button" class="button red right" onclick="choosePic();">Refresh</button>
       </div>
 
     </div>

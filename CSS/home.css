@@ -1,3 +1,4 @@
+
 html{
     box-sizing:border-box
 }
@@ -11,6 +12,9 @@ html{
 }
 body{
     margin:0
+}
+video{
+    display:inline-block
 }
 a{
     background-color:transparent;
@@ -60,7 +64,6 @@ textarea{
     -webkit-appearance:button;
     font:inherit
 }
-/* End extract */
 html,body{
     font-family:Verdana,sans-serif;
     font-size:15px;
@@ -75,8 +78,8 @@ h1{
 h2{
     font-size:30px
 }
-h4{
-    font-size:20px
+h3{
+    font-size:24px
 }
 h5{
     font-size:18px
@@ -84,7 +87,7 @@ h5{
 h6{
     font-size:16px
 }
-h1,h2,h4,h5,h6{
+h1,h2,h3,h5,h6{
     font-family:"Segoe UI",Arial,sans-serif;
     font-weight:400;margin:10px 0
 }
@@ -126,6 +129,14 @@ a{
     opacity:0.3}
 :disabled *{
     pointer-events:none
+}
+.tag{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center
 }
 .display-container{
     position:relative
@@ -199,7 +210,21 @@ a{
 .card{
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 }
-.hover-opacity:hover{
+.animate-fading{
+    animation:fading 10s infinite
+}
+@keyframes fading{
+    0%{
+        opacity:0
+    }
+    50%{
+        opacity:1
+    }
+    100%{
+        opacity:0
+    }
+}
+.opacity,.hover-opacity:hover{
     opacity:0.60
 }
 .opacity-min{
@@ -210,6 +235,9 @@ a{
 }
 .large{
     font-size:18px!important
+}
+.xlarge{
+    font-size:24px!important
 }
 .left-align{
     text-align:left!important
@@ -261,6 +289,10 @@ a{
     color:#fff!important;
     background-color:#4CAF50!important
 }
+.pink{
+    color:#fff!important;
+    background-color:#e91e63!important
+}
 .white{
     color:#000!important;
     background-color:#fff!important
@@ -277,14 +309,9 @@ a{
     color:#000!important;
     background-color:#ddffdd!important
 }
-.text-green{
-    color:#4CAF50!important
-}
 .text-white{
     color:#fff!important
 }
 .border-green{
     border-color:#4CAF50!important
 }
-
-

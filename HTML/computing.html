@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="lms.css" type="text/css" rel="stylesheet" />
+    <link href="computing.css" type="text/css" rel="stylesheet" />
     <style>
         .logo{
          height: 50px;
@@ -19,7 +19,6 @@
             width:100%;
         }
 div.about{
-
         width: 80%;  
         float: left;
         }
@@ -28,7 +27,6 @@ div.calender{
         width: 20%;
         float: left;
     }
-
         /*for calender*/
   .calender * {box-sizing:border-box;}
 .calender ul {list-style-type: none;}
@@ -120,7 +118,6 @@ div.five_right{
         width: 33.33%;
         float: left;  
     }
-
 div.six{
       height: 100%;
     width: 20%;
@@ -152,97 +149,61 @@ body{
    height: 20%;
     float: left;
 }
-.bottom{
-    width: 100%;
-    height: 80%;
-    float: left;
-}
-.resize{
-     max-width:100%;
-    height: auto;
-}
-.description{
-   text-align:center;
-    font-size: 12px;
-  
-}
 .click{
    text-align: center;
     
 }
-.access{
-   text-align: center;
-}
-        .left{
+        .fleft{
             width: 50%;
             float: left;
         }
         
-        .right{
+        .fright{
             width: 50%;
             float: left;
         }
     </style>
 </head>
 <body>
-    <div class="lmscontainer lmsblack lmsright-align">
+    <div class="container black right-align">
 <p id="login">Hi guest, <a href="login.html">Login</a></p>
     </div>
-    <div class="lmscontainer lmsdark-gray">
-        <img class="logo lmsmobile" src="GreenLMS2.png" alt="LMS logo" >
+    <div class="container dark-gray">
+        <img class="logo mobile" src="Greenlms2.png" alt=" logo" >
          
-<div class="lmsdropdown-hover  lmsright lmsmobile">
-    <button class=" btn lmsbutton lmsdark-gray">Faculties</button>
-    <div class="lmsdropdown-content lmsbar-block lmsborder" style="right:0">
-      <a href="#" class="lmsbar-item lmsbutton">Computing</a>
-      <a href="#" class="lmsbar-item lmsbutton">Engineering</a>
-      <a href="#" class="lmsbar-item lmsbutton">Medicine</a>
+<div class="dropdown-hover  right mobile">
+    <button class=" btn button dark-gray">Faculties</button>
+    <div class="dropdown-content bar-block border" style="right:0">
+      <a href="#" class="bar-item button">Computing</a>
+      <a href="#" class="bar-item button">Engineering</a>
+      <a href="#" class="bar-item button">Medicine</a>
     </div>
   </div>      
-        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">FAQ's</button>
-        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">Home</button>
+        <button class=" btn bar-item button dark-gray right mobile">FAQ's</button>
+        <button class=" btn bar-item button dark-gray right mobile">Home</button>
   
     </div>
-    <div class=" slide w3-container">
+    <div class=" slide">
 
-  <div class=" lmsdisplay-container lmstext-white">
-      <div class="w3-content w3-section" >
+  <div class=" display-container text-white">
     <img class="mySlides" src="computing1.PNG"  style="width:100% ">
     <img class="mySlides" src="computing2.PNG" style="width:100%">
     <img class="mySlides" src="computing3.PNG" style="width:100%">
-   <div class="lmsdisplay-middle lmslarge lmscenter">
-        <div class="lmspanel lmsdark-gray lmsopacity-min">    
+   <div class="display-middle large center">
+        <div class="panel dark-gray opacity-min">    
             <h1>Learning Management System</h1>
             <p>Online knowledge hub for your studies.</p>
             <a href="login.html">
-            <button class="lmsbutton lmsblack">Login</button>
+            <button class="button black">Login</button>
             </a>
        </div>  
       </div>
      </div>
-      <script>
-var myIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-
   </div>
-
-</div>
     
 
 
-    <div class="about lmsmobile lmswhite"><h2 class="lmspanel lmsgreen"><b>Faculty of Computing...</b></h2>
+    <div class="about mobile white"><h2 class="panel green"><b>Faculty of Computing...</b></h2>
            <center><br><br><br><br><br><h3><b>
        
                1 st year
@@ -255,7 +216,7 @@ function carousel() {
                </b></h3>
            </center>
     </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -316,7 +277,7 @@ function carousel() {
 </ul>
     </span>
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -375,7 +336,7 @@ function carousel() {
 </ul>
 </span>
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -434,7 +395,7 @@ function carousel() {
 </ul>
 </span>
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -495,7 +456,7 @@ function carousel() {
 </ul>
 </span>
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -552,7 +513,7 @@ function carousel() {
 </ul>
 
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -612,7 +573,7 @@ function carousel() {
 </ul>
 
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -674,7 +635,7 @@ function carousel() {
 </ul>
 
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -732,7 +693,7 @@ function carousel() {
 </ul>
 
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -792,7 +753,7 @@ function carousel() {
 </ul>
 
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -853,7 +814,7 @@ function carousel() {
 </ul>
 
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -912,7 +873,7 @@ function carousel() {
 </ul>
 
 </div>
-<div class="calender lmsmobile">
+<div class="calender mobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -973,25 +934,8 @@ function carousel() {
 </ul>
 
 </div>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("calender");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
     
-    <div class="six lmspanel lmscard lmsgreen">
+    <div class="six panel card green">
         <img src="complaints.PNG" alt="complaints_ideas" width="100%" height="50%">
         <h5><b>Complaints and Ideas about</b> </h5>
         <form >
@@ -1016,10 +960,10 @@ function showDivs(n) {
         </div>
 
   
-<div class="five lmspadding lmsblack" >
+<div class="five padding black" >
     
-    <div class="five_left lmspadding">
-        <div class="top lmscontainer lmsgreen"><br>
+    <div class="five_left padding">
+        <div class="top container green"><br>
             <center>
                 <img src="Engineering2.png"  height="180px" width="180px" />
             </center>
@@ -1031,8 +975,8 @@ function showDivs(n) {
                 </div>
         </div>
     </div>
-        <div class="five_middle lmspadding ">
-            <div class="top lmscontainer lmsgreen"><br/>
+        <div class="five_middle padding ">
+            <div class="top container green"><br/>
                 <center>
                     <img src="computing4.png" height="180px" width="180px" />
                 </center>
@@ -1044,8 +988,8 @@ function showDivs(n) {
                     </div>
             </div>
         </div>
-         <div class="five_right  lmspadding">
-           <div class="top lmscontainer lmsgreen"><br/>
+         <div class="five_right  padding">
+           <div class="top container green"><br/>
                <center>
                    <img src="medicine.png" height="180px" width="180px" /><br/><br/>
                </center>  
@@ -1061,9 +1005,9 @@ function showDivs(n) {
     </div>
 
     <div class="seven">
-        <h6 class="lmsblue lmspadding" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
+        <h6 class="blue padding" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
         <br/>
-        <div class="left lmsleft-align lmspadding">
+        <div class="fleft left-align padding">
         <a href="https://www.facebook.com/" >
         <img src="facebook.PNG" alt="Facebook" width="45px" height="45px">
         </a>
@@ -1080,16 +1024,17 @@ function showDivs(n) {
         <img src="linkedin.png" alt="LinkedIn" width="45px" height="45px"/>
         </a>
         </div>
-        <div class="right lmsright-align lmspadding"><img src="logo.png" alt="KNMT GREEN UNI" width="30%" height="10%" >
+        <div class="fright right-align padding"><img src="logo.png" alt="KNMT GREEN UNI" width="30%" height="10%" >
         <img src="telephone-phone-icon-6.png" alt="telephone_icon" width="45px" height="45px"/>
             <b>0114598785 / 6 / 7</b>
         <h6>No:7,Highlevel Road,<br/>Kirulapana,Colombo,<br/>Sri Lanka.<br/></h6></div>
         </div>
     
-    <div class="eight lmspanel lmspadding-24 lmsblack">
- <br/>  <div class="lmsright-align">
+    <div class="eight panel padding-24 black">
+ <br/>  <div class="right-align">
         <font size="2px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font>
         </div>
         </div>
+      <script src="computing.js"></script>
         </body>
 </html>

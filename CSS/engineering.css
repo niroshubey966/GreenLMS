@@ -1,3 +1,4 @@
+
 html{
     box-sizing:border-box
 }
@@ -21,10 +22,6 @@ a:active,a:hover{
 }
 img{
     border-style:none
-}
-hr{
-    box-sizing:content-box;height:0;
-    overflow:visible
 }
 button,input,textarea{
     font:inherit;
@@ -60,7 +57,6 @@ textarea{
     -webkit-appearance:button;
     font:inherit
 }
-/* End extract */
 html,body{
     font-family:Verdana,sans-serif;
     font-size:15px;
@@ -75,6 +71,9 @@ h1{
 h2{
     font-size:30px
 }
+h3{
+    font-size:24px
+}
 h4{
     font-size:20px
 }
@@ -84,14 +83,9 @@ h5{
 h6{
     font-size:16px
 }
-h1,h2,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     font-family:"Segoe UI",Arial,sans-serif;
     font-weight:400;margin:10px 0
-}
-hr{
-    border:0;
-    border-top:1px solid #eee;
-    margin:20px 0
 }
 img{
     margin-bottom:-5px
@@ -99,7 +93,7 @@ img{
 a{
     color:inherit
 }
-.button{
+.btn,.button{
     border:none;
     display:inline-block;
     outline:0;
@@ -113,7 +107,10 @@ a{
     cursor:pointer;
     white-space:nowrap
 }
-.button{
+.btn:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.btn,.button{
     -webkit-touch-callout:none;
     -webkit-user-select:none;
     -khtml-user-select:none;
@@ -121,11 +118,14 @@ a{
     -ms-user-select:none;
     user-select:none
 }   
-.button:disabled{
+.btn:disabled,.button:disabled{
     cursor:not-allowed;
     opacity:0.3}
 :disabled *{
     pointer-events:none
+}
+.btn:disabled:hover{
+    box-shadow:none
 }
 .display-container{
     position:relative
@@ -153,6 +153,21 @@ a{
     margin:0;
     padding:0
 }
+.bar{
+    width:100%;
+    overflow:hidden
+}
+.bar .bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    outline:none;
+    display:block
+}
+.bar .button{
+    white-space:normal
+}
 .bar-block .bar-item{
     width:100%;
     display:block;
@@ -163,9 +178,15 @@ a{
     white-space:normal;
     float:none
 }
-.container:after,.container:before,.panel:after,.panel:before{
+.block{
+    display:block;width:100%
+}
+.container:after,.container:before,.panel:after,.panel:before,.bar:before,.bar:after{
     content:"";
     display:table;clear:both
+}
+.hide{
+    display:none!important
 }
 @media (max-width:600px){
 .dropdown-hover.mobile .dropdown-content{
@@ -199,14 +220,8 @@ a{
 .card{
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
 }
-.hover-opacity:hover{
-    opacity:0.60
-}
 .opacity-min{
     opacity:0.75
-}
-.hover-sepia:hover{
-    filter:sepia(100%)
 }
 .large{
     font-size:18px!important
@@ -223,17 +238,8 @@ a{
 .border{
     border:1px solid #ccc!important
 }
-.topbar{
-    border-top:6px solid #ccc!important
-}
-.bottombar{
-    border-bottom:6px solid #ccc!important
-}
-.leftbar{
-    border-left:6px solid #ccc!important
-}
-.rightbar{
-    border-right:6px solid #ccc!important
+.margin-top{
+    margin-top:16px!important
 }
 .margin-left{
     margin-left:16px!important
@@ -269,6 +275,10 @@ a{
     color:#fff!important;
     background-color:#000!important
 }
+.hover-light-gray:hover{
+    color:#000!important;
+    background-color:#f1f1f1!important
+}
 .dark-gray{
     color:#fff!important;
     background-color:#616161!important
@@ -277,14 +287,6 @@ a{
     color:#000!important;
     background-color:#ddffdd!important
 }
-.text-green{
-    color:#4CAF50!important
-}
 .text-white{
     color:#fff!important
 }
-.border-green{
-    border-color:#4CAF50!important
-}
-
-

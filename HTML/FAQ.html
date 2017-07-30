@@ -5,7 +5,7 @@
     <link href="FAQ.css" type="text/css" rel="stylesheet" />
 
     <style>
-  .logo{
+ .logo{
          height: 50px;
         }
         .btn{
@@ -19,13 +19,116 @@
             height: 20%;
             width:100%;
         }
-        .panel{
+div.about{
+        width: 80%;  
+        float: left;
+        }
+        .lmspanel{
              margin: 0%;
         }
+div.calender{
+        height: 100%;
+        width: 20%;
+        float: left;
+    }
         /*for calender*/
+  .calender * {box-sizing:border-box;}
+.calender ul {list-style-type: none;}
 . calender body {font-family: Verdana,sans-serif;}
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+.weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+}
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
 /* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 10.2%; font-size: 10px}
+}
+@media screen and (max-width: 600px) {
+    .weekdays li, .days li {width: 12%;}
+    .days li .active {padding: 2px;}
+}
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
 /*div five*/
+div.five{
+      height: 35%;
+      background-color: white;
+    color:black;
+    float: left;
+}
+div.five_left{
+       height: 100%;
+        width: 33.33%;
+        float: left;  
+    }
+div.five_middle{
+       height: 100%;
+        width:33.33%;
+        float: left;  
+    }
+div.five_right{
+       height: 100%;
+        width: 33.33%;
+        float: left;  
+    }
+div.six{
+      height: 100%;
+    width: 20%;
+      background-color: #f9f8f8;
+        color:black;
+  float: left;
+    margin: 0%;
+}
 div.seven{
     height: 30%;
     width: 100%;
@@ -46,6 +149,15 @@ body{
     font-family: Arial;
     background color : #555555;
 }
+.top{
+   width: 100%;
+   height: 20%;
+    float: left;
+}
+.click{
+   text-align: center;
+    
+}
         .fleft{
             width: 50%;
             float: left;
@@ -63,13 +175,21 @@ body{
             width: 75%;
             float: left;
         }
+        .prev{
+            cursor: pointer;
+        }
+        .next{
+            cursor: pointer;
+        }
         .margin{
-             margin:2px;
-        }    </style>
+             margin-bottom: 0;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container black right-align">
-        <p id="login">Hi guest, <a href="login.html"> <b>Login</b></a></p>
+        <p id="login">Hi guest, <a href="login.html"> <b>Logout</b></a></p>
     </div>
     <div class="container dark-gray">
         <img class="logo mobile" src="GreenLMS2.png" alt="LMS logo" >
@@ -89,7 +209,7 @@ body{
         <div class=" slide">
 
   <div class=" display-container text-white">
-      
+      <div>
     <img class="mySlides" src="FAQs1.jpg"  style="width:100% ">
     <img class="mySlides" src="FAQs2.jpg" style="width:100%">
     <img class="mySlides" src="FAQs3.jpg" style="width:100%">
@@ -97,15 +217,15 @@ body{
         <div class="panel dark-gray opacity-min">    
             <h1><b>...F.A.Q.s...</b></h1>
             <p><i>Commen question and answers for you.</i></p>
-            <a href="login.html">
-            <button class="button black">Login</button>
-            </a>
+          
        </div>  
       </div>
      </div>
   
 
   </div>
+
+</div>
 <div>
     <h1 class="padding margin-top panel green">Frequently Asked Questions.</h1>
     <div class="container">
@@ -113,7 +233,7 @@ body{
   <div class="bar black">
     <button class="bar-item button tablink" onclick="openCity(event,'University')">University</button>
     <button class="bar-item button tablink" onclick="openCity(event,'LMS')">LMS</button>
-    <button class="bar-item button tablink" onclick="openCity(event,'Computin')">Computin</button>
+    <button class="bar-item button tablink" onclick="openCity(event,'Computin')">Computing</button>
     <button class="bar-item button tablink" onclick="openCity(event,'Engineering')">Engineering</button>
     <button class="bar-item button tablink" onclick="openCity(event,'Medicine')">Medicine</button>
   </div>
@@ -121,19 +241,19 @@ body{
   <div id="University" class="container border city">
   <p>Here you will find some frequently asked questions about University of KNMT.</p>
 <div class="container">
-<button onclick="myFunction('Demo1')" class="margin btn block green hover-light-gray left-align">Can I visit KNMT Green University before I apply?</button>
+<button onclick="myFunction('Demo1')" class="margin btn block green hover-light-gray left-align">Can I visit KNMT before I apply?</button>
 <div id="Demo1" class="container hide">
-  <p>There are more than 100 different open days and events in KNMT Green University organised by the University and the Colleges throughout the year. These include the KNMT Green University Open Day, College open days, Department open days and specialist open days.<br><br>
+  <p>There are more than 100 different open days and events in KNMT organised by the University and the Colleges throughout the year. These include the KNMT Open Day, College open days, Department open days and specialist open days.<br><br>
 
-But don’t worry if you can’t manage to visit KNMT Green University. You don’t have to attend an open day in order to apply. </p>
+But don’t worry if you can’t manage to visit KNMT. You don’t have to attend an open day in order to apply. </p>
 </div>
 
 </div>
 
 <div class="container">
-<button onclick="myFunction('Demo2')" class="margin btn block pale-green hover-light-gray left-align">What courses are available at KNMT Green University?</button>
+<button onclick="myFunction('Demo2')" class="margin btn block pale-green hover-light-gray left-align">What courses are available at KNMT?</button>
 <div id="Demo2" class="container hide">
-  <p>At KNMT Green University we have full-time undergraduate courses ranging from Anglo-Saxon, Norse and Celtic to Veterinary Medicine, and lots in between.<br><br>
+  <p>At KNMT we have full-time undergraduate courses ranging from Anglo-Saxon, Norse and Celtic to Veterinary Medicine, and lots in between.<br><br>
 
 Many of our courses encompass several subjects, with some options available in a number of courses where the subjects overlap. This offers much greater flexibility than more narrowly focused courses elsewhere. Those with a clear sense of the subject they wish to pursue at university can specialise. However, students who are less certain are able to explore the wider subject area before deciding what to focus on. <br><br>
  list of all the courses available can be found on the course index page</p>
@@ -143,9 +263,9 @@ Many of our courses encompass several subjects, with some options available in a
 <div class="container">
 <button onclick="myFunction('demo3')" class="margin btn block green hover-light-gray left-align">What is a College?</button>
 <div id="demo3" class="container hide">
-  <p>As well as being members of the University, our students are also a member of College. A College is where you'll be based for the time you're studying at the University of KNMT Green University, and while the Colleges provide student accommodation they are much more than halls of residence. Colleges are responsible for admitting students, and they also organise ‘supervisions’ (small-group teaching sessions that support the lectures and practicals that you attend).<br><br>
+  <p>As well as being members of the University, our students are also a member of College. A College is where you'll be based for the time you're studying at the University of KNMT, and while the Colleges provide student accommodation they are much more than halls of residence. Colleges are responsible for admitting students, and they also organise ‘supervisions’ (small-group teaching sessions that support the lectures and practicals that you attend).<br><br>
 
-For more information about the College system at KNMT Green University, and profiles on each of the 29 undergraduate Colleges, have a look at Colleges.</p>
+For more information about the College system at KNMT, and profiles on each of the 29 undergraduate Colleges, have a look at Colleges.</p>
 </div>
 </div>
       
@@ -153,7 +273,7 @@ For more information about the College system at KNMT Green University, and prof
 <button onclick="myFunction('demo4')" class="margin btn block pale-green hover-light-gray left-align">How do I choose a College?</button>
 <div id="demo4" class="container hide">
   <p>    
-It might seem a bit daunting trying to choose a College, but don't worry, Colleges are more alike than they are different! Students on the same course, regardless of their College, are taught together by the academic faculties/departments, and our cross-College moderation procedures mean that your choice of College does not affect your chances of being made an offer. The key functions that the University and Colleges are responsible for are outlined in KNMT Green University Explained.<br><br>
+It might seem a bit daunting trying to choose a College, but don't worry, Colleges are more alike than they are different! Students on the same course, regardless of their College, are taught together by the academic faculties/departments, and our cross-College moderation procedures mean that your choice of College does not affect your chances of being made an offer. The key functions that the University and Colleges are responsible for are outlined in KNMT Explained.<br><br>
 
 When choosing a College, we suggest you consider the following:<br><br>
 
@@ -170,7 +290,7 @@ It can be helpful to make a shortlist of perhaps half a dozen Colleges based on 
 
 Teaching is a level playing field across the University and is not determined by the College you attend – the differences between the Colleges lie in the ambience, not the educational opportunities.<br><br>
 
-The key functions that the University and Colleges are responsible for are outlined in KNMT Green University Explained.<br><br>
+The key functions that the University and Colleges are responsible for are outlined in KNMT Explained.<br><br>
     
 Guidance on how (and how not) to choose a College can be found in Choosing a College.</p>
 </div>
@@ -200,9 +320,9 @@ No – you can only make one application to the University, either selecting a p
 <button onclick="myFunction('demo7')" class="margin btn block green hover-light-gray left-align"> How do I apply?</button>
 <div id="demo7" class="container hide">
   <p>     
-The application process is really quite straightforward. To apply to the University of KNMT Green University you need to submit a UCAS application online by 15 October the year before you wish to start at the University.<br><br>
+The application process is really quite straightforward. To apply to the University of KNMT you need to submit a UCAS application online by 15 October the year before you wish to start at the University.<br><br>
     
-    Applicants living in countries outside the EU are also asked to submit a KNMT Green University Online Preliminary Application Form (COPA).<br><br>
+    Applicants living in countries outside the EU are also asked to submit a KNMT Online Preliminary Application Form (COPA).<br><br>
 
 Once you have submitted your UCAS Application (and COPA, if required) you will also be asked to complete a Supplementary Application Questionnaire (SAQ).<br><br>
 
@@ -227,7 +347,7 @@ Your personal statement is your opportunity to tell the universities you’re ap
 
 UCAS provide advice about what to include in your personal statement and you should refer to their website in the first instance. Your school/college may also be able to offer advice about what to include.<br><br>
 
-At KNMT Green University, all admissions decisions are based solely on academic criteria – ability and potential. Therefore, in their personal statement, we’re looking for applicants to:<br><br>
+At KNMT, all admissions decisions are based solely on academic criteria – ability and potential. Therefore, in their personal statement, we’re looking for applicants to:<br><br>
 
 explain their reasons for wanting to study the subject at university
 demonstrate enthusiasm for and commitment to their chosen course
@@ -235,7 +355,7 @@ express any particular interests(s) within the field
 outline how they’ve pursued their interest in the subject in their own time
 Such information is often used as a basis for discussion at interview (if interviewed).<br><br>
 
-If you wish to make any comments that are particularly relevant to your KNMT Green University application (eg to highlight particular features of the KNMT Green University course that attracted you), you have the opportunity to include an additional personal statement in your SAQ. This is optional and you won’t be disadvantaged if you have nothing to add in this section of the SAQ. As we’ll already have received a copy of it, you shouldn’t repeat information provided in your UCAS personal statement in the SAQ.</p>
+If you wish to make any comments that are particularly relevant to your KNMT application (eg to highlight particular features of the KNMT course that attracted you), you have the opportunity to include an additional personal statement in your SAQ. This is optional and you won’t be disadvantaged if you have nothing to add in this section of the SAQ. As we’ll already have received a copy of it, you shouldn’t repeat information provided in your UCAS personal statement in the SAQ.</p>
 </div>      
 </div>
       
@@ -244,7 +364,7 @@ If you wish to make any comments that are particularly relevant to your KNMT Gre
 <div id="demo9" class="container hide">
   <p>  
 
-About one in ten students coming to KNMT Green University takes a gap year before starting their studies. This year out is a very useful time in which to improve skills, earn money, travel and generally gain maturity and self-reliance.<br><br>
+About one in ten students coming to KNMT takes a gap year before starting their studies. This year out is a very useful time in which to improve skills, earn money, travel and generally gain maturity and self-reliance.<br><br>
 
 You should state on your UCAS application if you wish to defer entry. You’ll probably be asked about your plans at interview, so be prepared to talk about your year out.<br><br>
 
@@ -256,9 +376,9 @@ If you’re applying for Mathematics, most Colleges have a preference for immedi
 <button onclick="myFunction('demo10')" class="margin btn block pale-green hover-light-gray left-align">Will I be interviewed?</button>
 <div id="demo10" class="container hide">
   <p>
-Everyone with a realistic chance of being offered a place is invited to attend an interview – that's around 80 per cent of applicants. So, if you apply, it is very likely that you will be invited to KNMT Green University for an admissions interview (although due to the level of competition for places, there are applicants each year who are not interviewed).<br><br>
+Everyone with a realistic chance of being offered a place is invited to attend an interview – that's around 80 per cent of applicants. So, if you apply, it is very likely that you will be invited to KNMT for an admissions interview (although due to the level of competition for places, there are applicants each year who are not interviewed).<br><br>
 
-Interviews usually take place in KNMT Green University during the first three weeks of December, so we strongly advise you not to make unbreakable commitments for this period. Some applicants may be interviewed overseas for which an earlier application deadline and interview period may apply.<br><br>
+Interviews usually take place in KNMT during the first three weeks of December, so we strongly advise you not to make unbreakable commitments for this period. Some applicants may be interviewed overseas for which an earlier application deadline and interview period may apply.<br><br>
 
 Not all applicants who are interviewed will be successful (made an offer of a place), but all those who are made an offer will have been interviewed.
       </p>
@@ -294,22 +414,22 @@ Work experience isn't expected or required. However, for vocational courses, suc
       What extra-curricular activities will help my chances of admission?
 Our admissions decisions are based on academic criteria (ability and potential) and so we expect to see evidence you your ‘super-curricular’ activities – your wider engagements with the area(s) of academic interest, such as reading and other explorations relevant to the course you’ve applied for.<br><br>
 
-Your participation (or not) in specific extra-curricular activities that aren’t relevant to the course applied for are not taken into account and don’t affect your chances of being made an offer of a place at KNMT Green University.<br><br>
+Your participation (or not) in specific extra-curricular activities that aren’t relevant to the course applied for are not taken into account and don’t affect your chances of being made an offer of a place at KNMT.<br><br>
 
 However, when composing your personal statement, you should consider the importance that your other university choices may place on extra-curricular activities.</p>
 </div>
 
 </div>
 <div class="container">
-<button onclick="myFunction('demo14')" class="margin btn block pale-green hover-light-gray left-align">     Can I transfer to KNMT Green University from another university?</button>
+<button onclick="myFunction('demo14')" class="margin btn block pale-green hover-light-gray left-align">     Can I transfer to KNMT from another university?</button>
 <div id="demo14" class="container hide">
   <p>
  
-KNMT Green University Colleges will only, as a matter of principle, consider applications from students enrolled in a degree course at other UK universities in very exceptional circumstances.<br><br>
+KNMT Colleges will only, as a matter of principle, consider applications from students enrolled in a degree course at other UK universities in very exceptional circumstances.<br><br>
 
-Any application to study at KNMT Green University would need strong support from your Course Director or other academic tutor at your current university. A reference or letter of recommendation from that person to the KNMT Green University College would be required, and only then can a KNMT Green University College consider an application. All such applications are still subject to the same academic assessment as any other application to the University.<br><br>
+Any application to study at KNMT would need strong support from your Course Director or other academic tutor at your current university. A reference or letter of recommendation from that person to the KNMT College would be required, and only then can a KNMT College consider an application. All such applications are still subject to the same academic assessment as any other application to the University.<br><br>
 
-We do have a system of admitting graduates from other universities to do a second undergraduate degree as an affiliated student at KNMT Green University, in which case the course takes a year less than usual.</p>
+We do have a system of admitting graduates from other universities to do a second undergraduate degree as an affiliated student at KNMT, in which case the course takes a year less than usual.</p>
 </div>
 
 </div>
@@ -336,7 +456,7 @@ Please see the entrance requirements for typical requirements for the most commo
 <div id="demo17" class="container hide">
   <p>
      
-This depends upon the course you are planning to study. For many courses at KNMT Green University qualifications in certain subjects required and all Colleges expect such subjects to be passed, normally with an A or A* grade at A Level/grade 6 or 7 at Higher Level of the IB (or equivalent). Our other courses don’t have particular subject requirements but Admissions Tutors will expect high grades in the subjects most relevant to the course applied for and expect you to have read enough about the course to know what studying it entails.<br><br>
+This depends upon the course you are planning to study. For many courses at KNMT qualifications in certain subjects required and all Colleges expect such subjects to be passed, normally with an A or A* grade at A Level/grade 6 or 7 at Higher Level of the IB (or equivalent). Our other courses don’t have particular subject requirements but Admissions Tutors will expect high grades in the subjects most relevant to the course applied for and expect you to have read enough about the course to know what studying it entails.<br><br>
 
 Subject requirements and preferences are given in the relevant course entry. Please also check College-specific requirements with the College(s) you’re considering applying to.</p>
 </div>
@@ -349,7 +469,7 @@ Subject requirements and preferences are given in the relevant course entry. Ple
     
 While it’s becoming less common to be able to resit exams, should the opportunity be available your application is unlikely to be adversely affected by your resitting one or two modules – we appreciate that even very capable students may have a ‘bad day’ when an exam doesn’t go quite to plan.<br><br>
 
-However, there would be concern about your potential to be successful at KNMT Green University if you needed to resit numerous exams, particularly if only a marginal improvement could be achieved. This is because once at the University, students are regularly assessed by exam and there's no opportunity to resit any exams (with the exception of professional qualifying examinations in Medicine and Veterinary Medicine).<br><br>
+However, there would be concern about your potential to be successful at KNMT if you needed to resit numerous exams, particularly if only a marginal improvement could be achieved. This is because once at the University, students are regularly assessed by exam and there's no opportunity to resit any exams (with the exception of professional qualifying examinations in Medicine and Veterinary Medicine).<br><br>
 
 You should state your intention to resit any exams in your SAQ. Where there are particular reasons for underperformance in qualifications it’s useful if these can be outlined in the school/college reference. In some cases, it may be appropriate for your school/college referee to complete an Extenuating Circumstances Form.</p>
 </div>
@@ -359,9 +479,9 @@ You should state your intention to resit any exams in your SAQ. Where there are 
 <div id="demo19" class="container hide">
   <p>
      
-Every mature applicant is considered on an individual basis allowing personal qualities and experience to be taken into account in the selection process. However, the nature and demands of KNMT Green University courses mean they do require academic preparation, and mature students must be of an equal academic standard to school leavers. Therefore, you’re expected to demonstrate evidence of recent academic achievement at a high level.<br><br>
+Every mature applicant is considered on an individual basis allowing personal qualities and experience to be taken into account in the selection process. However, the nature and demands of KNMT courses mean they do require academic preparation, and mature students must be of an equal academic standard to school leavers. Therefore, you’re expected to demonstrate evidence of recent academic achievement at a high level.<br><br>
 
-If you are considering applying to KNMT Green University it's advisable to contact one of the mature Colleges to discuss your circumstances and for advice about academic requirements for the course you wish to take. </p>
+If you are considering applying to KNMT it's advisable to contact one of the mature Colleges to discuss your circumstances and for advice about academic requirements for the course you wish to take. </p>
 </div>
 </div>
       <div class="container">
@@ -369,7 +489,7 @@ If you are considering applying to KNMT Green University it's advisable to conta
 <div id="demo20" class="container hide">
   <p>
       
-Yes. KNMT Green University is fortunate to have a large amount of financial support available for its students. First of all there is the KNMT Green University Bursary Scheme for UK/EU students, offering bursaries of up to £3,500 a year (up to £5,600 per year for some mature students and care leavers). Colleges also offer financial support to students, and there are additional awards available for outstanding sportspeople, musicians and students with a disability.<br><br>
+Yes. KNMT is fortunate to have a large amount of financial support available for its students. First of all there is the KNMT Bursary Scheme for UK/EU students, offering bursaries of up to £3,500 a year (up to £5,600 per year for some mature students and care leavers). Colleges also offer financial support to students, and there are additional awards available for outstanding sportspeople, musicians and students with a disability.<br><br>
 
 For more information please see Financial support.</p>
 </div>
@@ -381,7 +501,7 @@ For more information please see Financial support.</p>
    
 Mature applicants need to submit a UCAS application online just like standard age applicants.<br><br>
 
-If you're applying from a country outside the EU, you should also submit a KNMT Green University Online Preliminary Application (COPA). Those applying for the Graduate Course in Medicine need to complete an additional form as well.<br><br>
+If you're applying from a country outside the EU, you should also submit a KNMT Online Preliminary Application (COPA). Those applying for the Graduate Course in Medicine need to complete an additional form as well.<br><br>
 
 The standard application deadline is 15 October. However, the four mature Colleges consider mature and affiliate applications in some subjects as part of a second applications round.</p>
 </div>
@@ -399,7 +519,7 @@ Yes. You can apply to any of the 29 undergraduate Colleges. The majority of stud
 <div id="demo23" class="container hide">
   <p>
 
-If you are a graduate with an approved degree from another university, you can apply to take a KNMT Green University BA course as an affiliated applicant. This means you could take the degree in a year less than usual.<br><br>
+If you are a graduate with an approved degree from another university, you can apply to take a KNMT BA course as an affiliated applicant. This means you could take the degree in a year less than usual.<br><br>
 
 Most Colleges consider affiliated applicants, but please note that there are some restrictions so please check with the College before submitting your application</p>
 </div>
@@ -409,7 +529,7 @@ Most Colleges consider affiliated applicants, but please note that there are som
 <div id="demo24" class="container hide">
   <p>
       
-Affiliated applicants need to submit a UCAS application just like any other applicant. If you're applying from a country outside the EU, you should also submit a KNMT Green University Online Preliminary Application (COPA).<br><br>
+Affiliated applicants need to submit a UCAS application just like any other applicant. If you're applying from a country outside the EU, you should also submit a KNMT Online Preliminary Application (COPA).<br><br>
 
 Affiliated applicants need to apply to a specific College. You can't make an open application as an affiliated applicant.</p>
 </div>
@@ -419,9 +539,9 @@ Affiliated applicants need to apply to a specific College. You can't make an ope
 <div id="demo25" class="container hide">
   <p>
 
-If you wish to apply for an undergraduate place at KNMT Green University you need to be studying towards a qualification of an equivalent standard to A Levels and be hoping to achieve top marks in it. It's likely that you'll also be asked for a particular level of achievement in the subject area you're hoping to study at university.<br><br>
+If you wish to apply for an undergraduate place at KNMT you need to be studying towards a qualification of an equivalent standard to A Levels and be hoping to achieve top marks in it. It's likely that you'll also be asked for a particular level of achievement in the subject area you're hoping to study at university.<br><br>
 
-Entrance requirements for a range of international qualifications can be found in the international students’ pages. If you are in any doubt, to check the appropriateness of your qualifications you should contact the KNMT Green University Admissions Office in the first instance, enclosing brief details of the courses that you have taken/are taking, together with your achieved/expected grades and indicate clearly the subject that you are intending to study at the University.</p>
+Entrance requirements for a range of international qualifications can be found in the international students’ pages. If you are in any doubt, to check the appropriateness of your qualifications you should contact the KNMT Admissions Office in the first instance, enclosing brief details of the courses that you have taken/are taking, together with your achieved/expected grades and indicate clearly the subject that you are intending to study at the University.</p>
 </div>
 </div>
             <div class="container">
@@ -448,7 +568,7 @@ The level of tuition fees for international students varies depending on the cou
 <div id="demo28" class="container hide">
   <p>
       
-The amount of financial support available for international students is very limited, but at KNMT Green University this includes KNMT Green University Commonwealth, European and International Trust awards; College awards; and a small number of country-specific scholarships. Few full scholarships are available at undergraduate level, and most support is a partial contribution to your overall costs and is means-tested. For more information see the International students section.</p>
+The amount of financial support available for international students is very limited, but at KNMT this includes KNMT Commonwealth, European and International Trust awards; College awards; and a small number of country-specific scholarships. Few full scholarships are available at undergraduate level, and most support is a partial contribution to your overall costs and is means-tested. For more information see the International students section.</p>
 </div>
 </div>
                               <div class="container">
@@ -456,7 +576,7 @@ The amount of financial support available for international students is very lim
 <div id="demo29" class="container hide">
   <p>
       
-International applicants need to submit a UCAS application and a KNMT Green University Online Preliminary Application (COPA).<br><br>
+International applicants need to submit a UCAS application and a KNMT Online Preliminary Application (COPA).<br><br>
 
 Each year the University conducts interviews in certain overseas countries. If you would like to be considered for an interview in one of these countries an earlier application deadline may apply.<br><br>
 
@@ -464,7 +584,7 @@ See international applications for information and deadlines.</p>
 </div>
 </div>
                               <div class="container">
-<button onclick="myFunction('demo30')" class="margin btn block pale-green hover-light-gray left-align">International applicants - Does KNMT Green University run an English language course</button>
+<button onclick="myFunction('demo30')" class="margin btn block pale-green hover-light-gray left-align">International applicants - Does KNMT run an English language course</button>
 <div id="demo30" class="container hide">
   <p>Yes. The University’s Language Centre runs Academic Development and Training for International Students.</p>
 </div>
@@ -480,10 +600,10 @@ See international applications for information and deadlines.</p>
 </div>
 
 </div> 
-<div class="container">
+<div class="lmscontainer">
 <button onclick="myFunction('demo-2')" class="margin btn block pale-green hover-light-gray left-align">Is D2L going away?</button>
 <div id="demo-2" class="container hide">
-  <p>This will be determined as a part of the LMS Evaluation and Selection initiative. No decisions have been made yet. The purpose of the initiative is to determine whether D2L meets the needs of our faculty and students, and if not, to select the best LMS solution for CU Boulder based on a wide range of criteria. If D2L is not selected, then it will be replaced </p>
+  <p>This will be determined as a part of the  Evaluation and Selection initiative. No decisions have been made yet. The purpose of the initiative is to determine whether D2L meets the needs of our faculty and students, and if not, to select the best LMS solution for CU Boulder based on a wide range of criteria. If D2L is not selected, then it will be replaced </p>
 </div>
 
 </div> 
@@ -555,7 +675,7 @@ See international applications for information and deadlines.</p>
       
       
       <div class="container">
-<button onclick="myFunction('demo-12')" class="margin btn block pale-green hover-light-gray left-align">When will the decision to stay with D2L or move to a different LMS be made?</button>
+<button onclick="myFunction('demo-12')" class="margin btn block pale-green hover-light-gray left-align">When will the decision to stay with D2L or move to a different  be made?</button>
 <div id="demo-12" class="container hide">
   <p>A decision on whether we will continue with D2L or move to a different LMS will be made by the end of the spring term. A full timeline is available on the LMS Initiative website</p>
 </div>
@@ -1040,7 +1160,7 @@ Linda Kelly    (780) 492-4160   linda.kelly@ualberta.ca.</p>
 
 
     <div class="seven">
-        <div class=>
+        <div class=lms>
         <h6 class="blue padding" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
         <br/>
         <div class="fleft left-align padding">
@@ -1075,7 +1195,7 @@ Linda Kelly    (780) 492-4160   linda.kelly@ualberta.ca.</p>
         <font size="2px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font>
         </div>
         </div>
-
-               <script src="FAQ.js"></script>
+    <script src="FAQ.js"></script>
+               
         </body>
 </html>

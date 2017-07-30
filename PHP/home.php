@@ -216,16 +216,20 @@ div.desc {
       <div class="dropdown-hover  right mobile">
      <button class=" btn button dark-gray">Faculties</button>
      <div class="dropdown-content bar-block border" style="right:0">
-      <a href="#" class="bar-item button">Computing</a>
-      <a href="#" class="bar-item button">Engineering</a>
-      <a href="#" class="bar-item button">Medicine</a>
+      <a href="computing.html" class="bar-item button">Computing</a>
+      <a href="eNginiring.html" class="bar-item button">Engineering</a>
+      <a href="mEdical.html" class="bar-item button">Medicine</a>
     </div>
         
   </div>  
-      
+      <a href="FAQ.html">
         <button class=" btn bar-item button dark-gray right mobile">FAQ's</button>
-        <a href="FAQ.html">
+         </a>
+        <a href="lms2.html">
         <button class=" btn bar-item button dark-gray right mobile">Green LMS</button>
+        </a>
+        <a href="admin.php">  
+            <button class=" btn bar-item button dark-gray right mobile">View complaints & ideas</button>
         </a>
     </div>
     <div class=" slide">
@@ -240,9 +244,7 @@ div.desc {
         <div class="panel dark-gray opacity-min">    
             <h1><b>KNMT Green University</b></h1>
             <p><i>Give your best, Forgive the rest..</i></p>
-            <a href="login.html">
-            <button class="button black">Login</button>
-            </a>
+            
        </div>  
       </div>
      </div>
@@ -268,12 +270,7 @@ Four Sri Lankan prime ministers and five governors-general have graduated from K
   <source src="KNMT%20University.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
         </video>
-        <p>
-            <i>
-Video courtesy of 
-<a href="https://youtu.be/AYAHkql75qM" target="_blank">Harvard University</a>.
-</i>
-        </p>
+        
 </div>   
     </div>
     
@@ -385,11 +382,11 @@ Video courtesy of
 </div>        
     </div> 
     </div>
-     <div class="six panel card green padding topbar bottombar border-green pale-green ">
+          <div class="six panel card green padding topbar bottombar border-green pale-green ">
        
         <img src="complaints.PNG" alt="complaints_ideas" width="100%" height="50%">
         <h5><b>Complaints and Ideas ,</b> </h5>
-        <form >
+        <form action="com_idea.php" method="post" name="input">
             <table>
                 <tr>
                     <td><input type="radio" name="comps" value="uni" checked></td> <td>About University</td>
@@ -404,12 +401,13 @@ Video courtesy of
                     <td> <input type="radio" name="comps" value="mf"></td> <td>About Medical Faculty</td>
                 </tr>
             </table>
-<textarea rows="5" cols="31">
+<textarea rows="5" cols="31" name="idea">
 
 </textarea>    
             <div class="padding center">  
               
-            <img src="submit.png" width="70% "height="20%" alt="submit" class="hover-opacity"/>
+          
+                <input type="image" src="submit.png" name="submit" type="button" alt="submit" onclick="AjaxResponse()" width="70%" height="20%" class="hover-opacity">
             </div>
                 </form>
         </div>

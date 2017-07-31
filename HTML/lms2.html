@@ -39,7 +39,7 @@ div.calender{
 .month {
     padding: 70px 25px;
     width: 100%;
-    background: #1abc9c;
+    background: green;
 }
 .month ul {
     margin: 0;
@@ -187,7 +187,7 @@ body{
 </head>
 <body>
     <div class="container black right-align">
-        <p id="login">Hi guest, <a href="login.html"> <b>Login</b></a></p>
+        <p id="login">Hi, <a href="index.php"> <b>Logout</b></a></p>
     </div>
     <div class="container dark-gray">
         <img class="logo mobile" src="GreenLMS2.png" alt="LMS logo" >
@@ -195,14 +195,14 @@ body{
 <div class="dropdown-hover  right mobile">
     <button class=" btn button dark-gray">Faculties</button>
     <div class="dropdown-content bar-block border" style="right:0">
-      <a href="#" class="bar-item button">Computing</a>
-      <a href="#" class="bar-item button">Engineering</a>
-      <a href="#" class="bar-item button">Medicine</a>
+      <a href="computing.html" class="bar-item button">Computing</a>
+      <a href="eNginiring.html" class="bar-item button">Engineering</a>
+      <a href="mEdical.html" class="bar-item button">Medicine</a>
     </div>
-  </div>      
-        <button class=" btn bar-item button dark-gray right mobile">FAQ's</button>
-        <button class=" btn bar-item button dark-gray right mobile">Home</button>
-  
+  </div>    
+        <a href="FAQ.html"> <button class=" btn bar-item button dark-gray right mobile">FAQ's</button></a>
+    <a href="home.html">  <button class=" btn bar-item button dark-gray right mobile">Home</button></a>
+  <a href="admin.php">  <button class=" btn bar-item button dark-gray right mobile">View complaints & ideas</button></a>
     </div>
     <div class=" slide">
 
@@ -215,9 +215,7 @@ body{
         <div class="panel dark-gray opacity-min">    
             <h1><b>Learning Management System</b></h1>
             <p><i>Online knowledge hub for your studies.</i></p>
-            <a href="login.html">
-            <button class="button black">Login</button>
-            </a>
+            
        </div>  
       </div>
      </div>
@@ -976,10 +974,11 @@ body{
 
 </div>
     
-    <div class="six panel card green padding panel topbar bottombar border-green pale-green">
+       <div class="six panel card green padding topbar bottombar border-green pale-green ">
+       
         <img src="complaints.PNG" alt="complaints_ideas" width="100%" height="50%">
-        <h5><b>Complaints and Ideas about</b> </h5>
-        <form >
+        <h5><b>Complaints and Ideas ,</b> </h5>
+        <form action="com_idea.php" method="post" name="input">
             <table>
                 <tr>
                     <td><input type="radio" name="comps" value="uni" checked></td> <td>About University</td>
@@ -994,18 +993,17 @@ body{
                     <td> <input type="radio" name="comps" value="mf"></td> <td>About Medical Faculty</td>
                 </tr>
             </table>
-<textarea rows="5" cols="31">
+<textarea rows="5" cols="31" name="idea">
 
 </textarea>    
-            <div class="padding center">
-                
-            <img src="submit.png" width="70% "height="20%" alt="submit" class="hover-opacity"/>
-                
+            <div class="padding center">  
+              
+          
+                <input type="image" src="submit.png" name="submit" type="button" alt="submit" onclick="AjaxResponse()" width="70%" height="20%" class="hover-opacity">
             </div>
                 </form>
         </div>
 
-  
 <div class="five padding black panel topbar bottombar border-green pale-green" >
     
     <div class="five_left padding panel leftbar rightbar border-green pale-green">
@@ -1079,11 +1077,14 @@ body{
     
     <div class="eight panel padding-24 black">
         <div class="logo2">
-        <img src="logo.png" alt="KNMT GREEN UNI" width="100%" height="10%" >
+        <img src="logo.png" alt="KNMT GREEN UNI" width="100%" height="10%" ><br>
+           
             </div>
    <div class="copy_right right-align">
         
-        <font size="2px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font>
+        <font size="2px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font><br>
+         <img src="css3val.png" alt="validationcss3" width="10%" height="10%">
+            <img src="html5val.png" alt="validationhtml5" width="10%" height="10%"> 
         </div>
         </div>
                <script src="lms2.js"></script>

@@ -1,9 +1,10 @@
+ss
 <!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="lms.css" type="text/css" rel="stylesheet" />
-    <linl href="uploads.php" type="text/php" rel="stylesheet"/>
+    <link href="faculty.css" type="text/css" rel="stylesheet" />
+
     <style>  
 .logo{
          height: 50px;
@@ -213,14 +214,24 @@ body{
             <a href="MIT18_01SCF10_Ses1a" >1.Session 1</a> <br/>
             <a href="MIT18_01SCF10_Ses1b" >2.Session 2</a> <br/>
             <a href="MIT18_01SCF10_exam1" >3.Exam Paper </a><br/>
-            <a href="MIT18_01SCF10_exam1sol" >4.Answers</a>  
+            <a href="MIT18_01SCF10_exam1sol" >4.Answers</a>
+      <?php      
+          $db = mysql_connect("localhost","root","","photos");
+          $sql = "SELECT * FROM ";
+           
+            }
+            
+            
+      ?>      
+            
+            
         <form action="" method="post" enctype="multipart/form-data">
         <label>Upload File
              <input id="filefield" type="file" name="filefield" />
         </label>
         <label>
             <input id="Upload" type="submit" name="Upload" value="Upload" />
-            <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+            <input type="hidden" name="MAX_FILE_SIZE" value="100000"  />
         </label></form>
 
         <h2 class="lmspanel lmsgreen"><b>2 nd Semester - Calculus</b>

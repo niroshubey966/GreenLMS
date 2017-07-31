@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="engineering4.css" type="text/css" rel="stylesheet" />
+    <link href="faculty.css" type="text/css" rel="stylesheet" />
     <style>
         .logo{
          height: 50px;
@@ -19,6 +19,7 @@
             width:100%;
         }
 div.about{
+
         width: 80%;  
         float: left;
         }
@@ -27,6 +28,7 @@ div.calender{
         width: 20%;
         float: left;
     }
+
         /*for calender*/
   .calender * {box-sizing:border-box;}
 .calender ul {list-style-type: none;}
@@ -103,6 +105,29 @@ div.five{
     color:black;
     float: left;
 }
+div.five_left{
+       height: 100%;
+        width: 33.33%;
+        float: left;  
+    }
+div.five_middle{
+       height: 100%;
+        width:33.33%;
+        float: left;  
+    }
+div.five_right{
+       height: 100%;
+        width: 33.33%;
+        float: left;  
+    }
+
+div.six{
+      height: 100%;
+    width: 20%;
+      background-color: #f9f8f8;
+        color:black;
+  float: left;
+}
 div.seven{
     height: 30%;
     width: 100%;
@@ -122,78 +147,119 @@ body{
     font-family: Arial;
     background color : #555555;
 }
-        .fleft{
+.top{
+   width: 100%;
+   height: 20%;
+    float: left;
+}
+.bottom{
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+.resize{
+     max-width:100%;
+    height: auto;
+}
+.description{
+   text-align:center;
+    font-size: 12px;
+  
+}
+.click{
+   text-align: center;
+    
+}
+.access{
+   text-align: center;
+}
+        .left{
             width: 50%;
             float: left;
         }
         
-        .fright{
+        .right{
             width: 50%;
             float: left;
         }
     </style>
 </head>
 <body>
-    <div class="container black right-align">
+    <div class="lmscontainer lmsblack lmsright-align">
 <p id="login">Hi guest, <a href="login.html">Login</a></p>
     </div>
-    <div class="container dark-gray">
-        <img class="logo mobile" src="GreenLMS2.png" alt="LMS logo" >
+    <div class="lmscontainer lmsdark-gray">
+        <img class="logo lmsmobile" src="GreenLMS2.png" alt="LMS logo" >
          
-<div class="dropdown-hover  right mobile">
-    <button class=" btn button dark-gray">Faculties</button>
-    <div class="dropdown-content bar-block border" style="right:0">
-      <a href="#" class="bar-item button">Computing</a>
-      <a href="#" class="bar-item button">Engineering</a>
-      <a href="#" class="bar-item button">Medicine</a>
+<div class="lmsdropdown-hover  lmsright lmsmobile">
+    <button class=" btn lmsbutton lmsdark-gray">Faculties</button>
+    <div class="lmsdropdown-content lmsbar-block lmsborder" style="right:0">
+      <a href="#" class="lmsbar-item lmsbutton">Computing</a>
+      <a href="#" class="lmsbar-item lmsbutton">Engineering</a>
+      <a href="#" class="lmsbar-item lmsbutton">Medicine</a>
     </div>
   </div>      
-        <button class=" btn bar-item button dark-gray right mobile">FAQ's</button>
-        <button class=" btn bar-item button dark-gray right mobile">Home</button>
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">FAQ's</button>
+        <button class=" btn lmsbar-item lmsbutton lmsdark-gray lmsright lmsmobile">Home</button>
   
     </div>
-    <div class=" slide">
+    <div class=" slide w3-container">
 
-  <div class=" display-container text-white">
-  
+  <div class=" lmsdisplay-container lmstext-white">
+      <div class="w3-content w3-section" >
     <img class="mySlides" src="4.PNG"  style="width:100% ">
     <img class="mySlides" src="7.PNG" style="width:100%">
     <img class="mySlides" src="Engineering1.PNG" style="width:100%">
-   <div class="display-middle large center">
-        <div class="panel dark-gray opacity-min">    
+   <div class="lmsdisplay-middle lmslarge lmscenter">
+        <div class="lmspanel lmsdark-gray lmsopacity-min">    
             <h1>Learning Management System</h1>
             <p>Online knowledge hub for your studies.</p>
             <a href="login.html">
-            <button class="button black">Login</button>
+            <button class="lmsbutton lmsblack">Login</button>
             </a>
        </div>  
       </div>
      </div>
+      <script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
   </div>
 
-
+</div>
     
 
 
-    <div class="about mobile white"><h2 class="panel green"><b>Faculty of Engineering...</b></h2>
+    <div class="about lmsmobile lmswhite"><h2 class="lmspanel lmsgreen"><b>Faculty of Engineering...</b></h2>
          <center><h2><br><b>4 th Year</b></h2></center><br>
         <table style="width:100%"><center>
   <tr>
-    <th><img src="c1.jpg" style="width:28%"></th>
-    <th><img src="r.jpg" style="width:28%"></th> 
+      <th><a href="eng41.html"><img src="c1.jpg" style="width:28%"></a></th>
+      <th><a href="eng42.html"><img src="r.jpg" style="width:28%"></a></th> 
     
   </tr>
   <tr><h4>
-    <td><center><b>Critical Thinking</b></center></td>
-      <td><center><b>Robotics</b></center></td> 
+      <td><a href="eng41.html"><center><b>Critical Thinking</b></center></a></td>
+      <td><a href="eng42.html"><center><b>Robotics</b></center></a></td> 
     </h4>
   </tr>
       </center>
         </table>            
        
     </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -254,7 +320,7 @@ body{
 </ul>
     </span>
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -313,7 +379,7 @@ body{
 </ul>
 </span>
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -372,7 +438,7 @@ body{
 </ul>
 </span>
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -433,7 +499,7 @@ body{
 </ul>
 </span>
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -490,7 +556,7 @@ body{
 </ul>
 
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -550,7 +616,7 @@ body{
 </ul>
 
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -612,7 +678,7 @@ body{
 </ul>
 
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -670,7 +736,7 @@ body{
 </ul>
 
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -730,7 +796,7 @@ body{
 </ul>
 
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -791,7 +857,7 @@ body{
 </ul>
 
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -850,7 +916,7 @@ body{
 </ul>
 
 </div>
-<div class="calender mobile">
+<div class="calender lmsmobile">
 <div class="month">      
   <ul>
     <li class="prev" onclick="plusDivs(-1)">&#10094;</li>
@@ -911,11 +977,28 @@ body{
 </ul>
 
 </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("calender");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
     
     
 
   
-<div class="five padding black" >
+<div class="five lmspadding lmsblack" >
     <h3>Degrees we offer for you thruogh our Engineering Faculty</h3>
    <ul><h4>
         <li>BEng(Hons).Electrical Engineering</li>
@@ -929,9 +1012,9 @@ body{
     </div>
 
     <div class="seven">
-        <h6 class="blue padding" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
+        <h6 class="lmsblue lmspadding" style="text-shadow:1px 1px 0 #444">For more details.. join with us on..</h6>
         <br/>
-        <div class="fleft left-align padding">
+        <div class="left lmsleft-align lmspadding">
         <a href="https://www.facebook.com/" >
         <img src="facebook.PNG" alt="Facebook" width="45px" height="45px">
         </a>
@@ -948,18 +1031,15 @@ body{
         <img src="linkedin.png" alt="LinkedIn" width="45px" height="45px"/>
         </a>
         </div>
-        <div class="fright right-align padding"><img src="logo.png" alt="KNMT GREEN UNI" width="30%" height="10%" >
+        <div class="right lmsright-align lmspadding"><img src="logo.png" alt="KNMT GREEN UNI" width="30%" height="10%" >
         <img src="telephone-phone-icon-6.png" alt="telephone_icon" width="45px" height="45px"/>
             <b>0114598785 / 6 / 7</b>
         <h6>No:7,Highlevel Road,<br/>Kirulapana,Colombo,<br/>Sri Lanka.<br/></h6></div>
         </div>
     
-    <div class="eight panel padding-24 black">
- <br/>  <div class="right-align">
+    <div class="eight lmspanel lmspadding-24 lmsblack">
+ <br/>  <div class="lmsright-align">
         <font size="2px" >This website and its content is a property of Kusal_Nirosh Melani_Thisarani. Any redistribution or reproduction of part or all of the contents in any form is strictly prohibited.<br/> Copyright © 2017 KNMT Green University.<br/> All Rights Reserved.</font>
         </div>
         </div>
-        <script src="engineering4.js"></script>
-        </body>
-</html>
        
